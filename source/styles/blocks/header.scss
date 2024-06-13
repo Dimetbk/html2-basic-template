@@ -1,5 +1,55 @@
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  color: $color-base-black;
+
+
+}
+.header__container {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.header__logo {
+  padding: 12px 0 12px 20px;
+}
+
+.header__nav-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.header__nav-item {
+  margin: 22px;
+}
+
+.header__authorization {
+  background-image: url("../../icons/icon-user.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.header__buy {
+  background-image: url("../../icons/icon-bag.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.header__menu {
+  background-image: url("../../icons/icon-menu-closed.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  width: 16px;
+  height: 16px;
 }

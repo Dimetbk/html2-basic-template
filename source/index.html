@@ -3,21 +3,85 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Drink2Go - интернет магазин по продаже кофейных напитков</title>
+  <title>
+    Drink2Go - интернет магазин по продаже кофейных напитков
+  </title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="preload" href="#" type="font/woff2" as="font">
+  <link rel="preload" href="/fonts/montserrat-v26-cyrillic_latin-regular.woff2" type="font/woff2" as="font" crossorigin>
+  <link rel="preload" href="/fonts/montserrat-v26-cyrillic_latin-500.woff2" type="font/woff2" as="font" crossorigin>
+  <link rel="preload" href="/fonts/montserrat-v26-cyrillic_latin-600.woff2" type="font/woff2" as="font" crossorigin>
+  <link rel="preload" href="/fonts/montserrat-v26-cyrillic_latin-700.woff2" type="font/woff2" as="font" crossorigin>
+  <link rel="preload" href="/fonts/montserrat-v26-cyrillic_latin-800.woff2" type="font/woff2" as="font" crossorigin>
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="./favicons/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="./favicons/favicon180.png" type="image/png">
+  <link rel="apple-touch-icon" href="./favicons/favicon180.png">
+  <link rel="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
-  <header class="header">Шапка</header>
+  <header class="header" data-test="header">
+    <div class="header__container">
+      <img class="header__logo" src="/images/logo-mobile.svg" width="32" height="36"
+        alt="Логотип интернет магазина по продаже кофейных напитков.">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a class="header__authorization" href="#">
+            <span class="visually-hidden">
+              Иконка авторизации на сайте интернет магазина по продаже кофейных напитков.
+            </span>
+          </a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__buy" href="#">
+            <span class="visually-hidden">
+              Иконка перехода в корзину интернет магазина по продаже кофейных напитков.
+            </span>
+          </a>
+        </li>
+        <li class="header__nav-item">
+          <a class="header__menu" href="#">
+            <span class="visually-hidden">
+              Открыть-закрыть меню интернет магазина по продаже кофейных напитков.
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
   <main>
-    <h1>Страница для старта</h1>
+    <section class="hero" data-test="hero">
+      <div class="container">
+        Для промо блока со слайдером
+      </div>
+    </section>
+
+    <section class="features" data-test="features">
+      <div class="container">
+        для блока преимуществ
+      </div>
+    </section>
+
+    <section class="catalog" data-test="catalog">
+      <div class="container">
+        для каталога
+      </div>
+    </section>
+
+    <section class="map" data-test="map">
+      <div class="container">
+        для карты
+      </div>
+    </section>
   </main>
+
+  <footer class="footer" data-test="footer">
+    <div class="container">
+      Подвал
+    </div>
+  </footer>
 </body>
 
 </html>

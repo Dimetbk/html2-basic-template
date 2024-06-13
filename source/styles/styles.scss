@@ -2,6 +2,12 @@
 @import "./common/variables.scss";
 @import "./common/global.scss";
 @import "./common/fonts.scss";
+@import "./common/visually-hidden";
 
 /* BLOCKS */
 @import "./blocks/header.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/features.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/map.scss";
+@import "./blocks/footer.scss";
