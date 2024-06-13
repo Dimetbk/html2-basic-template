@@ -9,8 +9,6 @@
 }
 
 .header__nav-list {
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -75,7 +73,4 @@
 
 .header__menu-item:last-child {
   border-bottom: 1px solid $color-base-secondary;
-
 }
-
-

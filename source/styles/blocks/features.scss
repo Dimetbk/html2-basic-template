@@ -1,5 +1,39 @@
 .features {
-  background-color: #334b99;
-  color: #ffffff;
-  padding: 10px 15px;
+  background-color: $color-base-white;
+  color: $color-base-black;
+}
+
+.features__container {
+  text-align: center;
+}
+
+.features__badge {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $color-base-primary;
+}
+
+.features__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.features__list {
+
+  }
+
+.features__item {
+  }
+
+.features__title {
+  }
+
+.features__subtitle {
+  }
+
+.features__description {
 }

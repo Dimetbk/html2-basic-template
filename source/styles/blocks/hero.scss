@@ -1,10 +1,10 @@
 .hero {
-
+  background-color: $color-bg-flat-white;
 }
 
 .hero__container {
   padding: 0 20px;
-  background-color: $color-bg-flat-white;
+
 }
 
 .hero__offers-wrapper {
@@ -46,18 +46,24 @@
 
 .hero__descriprion {
   margin-bottom: 20px;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  text-align: center;
 }
 
 .hero__buy {
+  margin: auto;
+  margin-bottom: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 230px;
-
 }
 
 .hero__price-wrapper {
   display: flex;
+  gap: 6px;
   align-items: center;
 }
 
@@ -65,15 +71,27 @@
   text-align: center;
   text-decoration: line-through;
   font-size: 16px;
-  line-height: 2.0;
+  line-height: 1.6;
+  font-weight: $font-weight;
   color: $color-base-primary;
 }
 
 .hero__price-new {
+  text-align: center;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.6;
+
 }
 
 .hero__offer {
+  padding: 8px 20px;
+  width: 113px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.hero__toggles {
+
 }
