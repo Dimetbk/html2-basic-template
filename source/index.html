@@ -49,29 +49,63 @@
         </li>
       </ul>
     </div>
-    <div class="header__drop-wrapper">
-      <ul class="header__drop-list">
-        <li class="header__drop-item">
-          Главная
+    <div class="header__menu-wrapper">
+      <ul class="header__menu-list">
+        <li class="header__menu-item header__menu-item--current">
+          <a>Главная</a>
         </li>
-        <li class="header__drop-item">
-          Каталог
+        <li class="header__menu-item">
+          <a>Каталог</a>
         </li>
-        <li class="header__drop-item">
-          Доставка
+        <li class="header__menu-item">
+          <a>Доставка</a>
         </li>
-        <li class="header__drop-item">
-          О нас
+        <li class="header__menu-item">
+          <a>О нас</a>
         </li>
       </ul>
     </div>
-
   </header>
 
   <main>
     <section class="hero" data-test="hero">
-      <div class="container">
-        Для промо блока со слайдером
+      <div class="hero__container">
+        <div class="hero__offers-wrapper slider">
+          <h1 class="visually-hidden">
+            Наши новые предложения!
+          </h1>
+          <ul class="hero__offers-list slider__list">
+            <li class="hero__offers-item hero__offers-item--product1 slider__item">
+              <img class="hero__image" src="/images/decaf-flat-white@1x.png" width="280" height="280"
+                alt="Изображение нового продукта Декаф Флэт Уайт.">
+              <p class="hero__badge">
+                Новинка!
+              </p>
+              <h2 class="hero__title">
+                Декаф Флэт Уайт
+              </h2>
+              <p class="hero__descriprion">
+                Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для
+                расслабления после тяжёлого рабочего дня
+              </p>
+              <div class="hero__buy">
+                <div class="hero__price-wrapper">
+                  <p class="hero__price-old">295&#8381;</p>
+                  <p class="hero__price-new">225&#8381;</p>
+                </div>
+                <button class="hero__offer">Заказать</button>
+              </div>
+
+            </li>
+            <li class="hero__offers-item hero__offers-item--product2 slider__item"></li>
+            <li class="hero__offers-item hero__offers-item--product3 slider__item"></li>
+          </ul>
+          <p class="hero__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--current" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
       </div>
     </section>
 
@@ -95,8 +129,12 @@
   </main>
 
   <footer class="footer" data-test="footer">
-    <div class="container">
-      Подвал
+    <div class="footer__container">
+
+      <div class="main-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
     </div>
   </footer>
 </body>

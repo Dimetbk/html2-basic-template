@@ -1,5 +1,79 @@
 .hero {
-  background-color: #33995d;
-  color: #ffffff;
-  padding: 10px 15px;
+
+}
+
+.hero__container {
+  padding: 0 20px;
+  background-color: $color-bg-flat-white;
+}
+
+.hero__offers-wrapper {
+
+}
+
+.hero__offers-list {
+  text-align: center;
+}
+
+.hero__offers-item {
+
+}
+
+.hero__offers-item--product1 {
+}
+
+.hero__image {
+  margin: 20px 0 10px;
+}
+
+.hero__badge {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $color-base-primary;
+}
+
+.hero__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+}
+
+.hero__descriprion {
+  margin-bottom: 20px;
+}
+
+.hero__buy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 230px;
+
+}
+
+.hero__price-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.hero__price-old {
+  text-align: center;
+  text-decoration: line-through;
+  font-size: 16px;
+  line-height: 2.0;
+  color: $color-base-primary;
+}
+
+.hero__price-new {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.hero__offer {
 }

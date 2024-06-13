@@ -3,6 +3,12 @@ html {
   height: 100%;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   min-width: 320px;
@@ -13,4 +19,12 @@ body {
   line-height: $line-height;
   background-color: $color-base-white;
   color: $color-base-black;
+}
+
+body ul {
+  list-style: none;
+}
+
+body a {
+  cursor: pointer;
 }

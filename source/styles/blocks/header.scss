@@ -1,18 +1,11 @@
-.header {
-  color: $color-base-black;
-
-
-}
 .header__container {
   margin: 0 auto;
-  padding: 0;
   display: flex;
   justify-content: space-between;
-
 }
 
 .header__logo {
-  padding: 12px 0 12px 20px;
+  padding: 12px 20px;
 }
 
 .header__nav-list {
@@ -55,15 +48,15 @@
   border: none;
 }
 
-.header__menu--closed .header__drop-wrapper {
+.header__menu--closed .header__menu-wrapper {
   display: none;
 }
 
-.header__menu--opened .header__drop-wrapper {
+.header__menu--opened .header__menu-wrapper {
   display: block;
 }
 
-.header__drop-list {
+.header__menu-list {
   margin: 0;
   padding: 0;
   display: flex;
@@ -72,7 +65,7 @@
   list-style: none;
 }
 
-.header__drop-item {
+.header__menu-item {
   padding: 20px 0;
   text-align: center;
   text-transform: uppercase;
@@ -80,7 +73,7 @@
   border-top: 1px solid $color-base-secondary;
 }
 
-.header__drop-item:last-child {
+.header__menu-item:last-child {
   border-bottom: 1px solid $color-base-secondary;
 
 }
