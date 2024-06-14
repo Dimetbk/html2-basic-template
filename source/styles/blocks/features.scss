@@ -4,11 +4,13 @@
 }
 
 .features__container {
+  padding: 0 20px;
   text-align: center;
 }
 
 .features__badge {
   margin-bottom: 4px;
+  margin-top: 50px;
   font-weight: 700;
   font-size: 12px;
   line-height: 133%;
@@ -22,18 +24,55 @@
   flex-direction: column;
 }
 
-.features__list {
+.features__title {
+  margin-bottom: 36px;
+}
 
-  }
+.features__list {
+  display: flex;
+  flex-direction: column;
+}
 
 .features__item {
-  }
+  margin: auto;
+  padding-top: 66px;
+  margin-bottom: 32px;
+  background-size: 52px;
+  background-position: top;
+  background-repeat: no-repeat;
+}
 
-.features__title {
-  }
+.features__item:last-child {
+  margin-bottom: 60px;
+}
+
+.features__item--speed {
+  background-image: url("../../images/image-features-speed.svg");
+}
+
+.features__item--fit {
+  background-image: url("../../images/image-features-fit.svg");
+}
+
+.features__item--energy {
+  background-image: url("../../images/image-features-energy.svg");
+}
+
+.features__item--eco {
+  background-image: url("../../images/image-features-eco.svg");
+}
+
+
+.features__box {
+
+}
 
 .features__subtitle {
-  }
+
+}
+
 
 .features__description {
+  width: 280px;
+  text-align: center;
 }
