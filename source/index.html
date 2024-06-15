@@ -18,6 +18,7 @@
   <link rel="apple-touch-icon" href="./favicons/favicon180.png">
   <link rel="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
+  <script src="scripts/filter.js" defer></script>
 </head>
 
 <body class="page__body">
@@ -123,7 +124,7 @@
                 Скорость
               </h3>
               <p class="features__description">
-                Готовый напиток всегда под рукой — просто открой банку
+                Готовый напиток всегда под рукой&nbsp;&mdash; просто открой банку
               </p>
             </li>
             <li class="features__item features__item--fit">
@@ -131,7 +132,7 @@
                 Удобство
               </h3>
               <p class="features__description">
-                Легко помещается и в карман, и в маленькую сумочку
+                Легко помещается и&nbsp;в&nbsp;карман, и&nbsp;в&nbsp;маленькую сумочку
               </p>
             </li>
             <li class="features__item features__item--energy">
@@ -147,7 +148,7 @@
                 Экологичность
               </h3>
               <p class="features__description">
-                Вся упаковка сделана из перерабатываемых материалов
+                Вся упаковка сделана из&nbsp;перерабатываемых материалов
               </p>
             </li>
           </ul>
@@ -156,7 +157,109 @@
     </section>
 
     <section class="catalog" data-test="catalog">
-      <div class="container">
+      <div class="catalog__container">
+        <div class="catalog__selection">
+          <p class="catalog__badge">
+            Каталог
+          </p>
+          <div class="catalog__wrapper">
+            <h2 class="catalog__title">
+              Каталог кофейных напитков
+            </h2>
+            <div class="catalog__filter filter">
+              <p class="filter__parametr filter__parametr--special">
+                Цена
+              </p>
+              <div class="filter__container">
+                <div class="filter__slider-track"></div>
+                <input class="filter__range" type="range" min="0" max="1000" value="0" id="slider-1"
+                  oninput="slideOne()">
+                <input class="filter__range" type="range" min="0" max="1000" value="900" id="slider-2"
+                  oninput="slideTwo()">
+              </div>
+              <div class="filter__values">
+                <span class="filter__number" id="range1">
+                  0
+                </span>
+                <span> &dash; </span>
+                <span class="filter__number" id="range2">
+                  1000
+                </span>
+              </div>
+            </div>
+            <div class="filter__option">
+              <p class="filter__parametr">
+                Наличие молока
+              </p>
+              <div class="filter__radio">
+                <input class="radio" type="radio" id="huey" name="drone" value="huey" checked />
+                <label for="huey">
+                  Неважно
+                </label>
+              </div>
+              <div class="filter__radio">
+                <input class="radio" type="radio" id="dewey" name="drone" value="dewey" />
+                <label for="dewey">
+                  Только животное
+                </label>
+              </div>
+              <div class="filter__radio">
+                <input class="radio" type="radio" id="louie" name="drone" value="louie" />
+                <label for="louie">
+                  Только растительное
+                </label>
+              </div>
+              <div class="filter__radio">
+                <input class="radio" type="radio" id="louis" name="drone" value="louie" disabled />
+                <label for="louis">
+                  Без молока
+                </label>
+              </div>
+            </div>
+            <div>
+              <p class="filter__parametr">
+                Страна произрастания
+              </p>
+              <div>
+                <input class="filter__checkbox checkbox" type="checkbox" id="brazil" />
+                <label for="brazil">
+                  Бразилия
+                </label>
+              </div>
+              <div>
+                <input class="filter__checkbox checkbox" type="checkbox" id="efiop" />
+                <label for="efiop">
+                  Эфиопия
+                </label>
+              </div>
+              <div>
+                <input class="filter__checkbox checkbox" type="checkbox" id="columb" />
+                <label for="columb">
+                  Колумбия
+                </label>
+              </div>
+              <div>
+                <input class="filter__checkbox checkbox" type="checkbox" id="kostarica" />
+                <label for="kostarica">
+                  Коста-Рика
+                </label>
+              </div>
+              <div>
+                <input class="filter__checkbox checkbox" type="checkbox" id="peru" disabled />
+                <label for="peru">
+                  Перу
+                </label>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="catalog__sorting">
+
+          </div>
+
+        </div>
+
 
       </div>
     </section>
