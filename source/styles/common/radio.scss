@@ -9,7 +9,6 @@
   align-items: center;
   user-select: none;
   cursor: pointer;
-  color: aqua;
 }
 
 .radio + label::before {
@@ -53,7 +52,6 @@
 
 .radio:disabled + label::before + label {
   border-color: $color-alt-light-grey;
-  color: aqua;
 }
 
 .radio:focus-visible + label::before {

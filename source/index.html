@@ -16,7 +16,7 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="./favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./favicons/favicon180.png">
-  <link rel="manifest.webmanifest">
+  <link rel="manifest.webmanifest" href="./manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
   <script src="scripts/filter.js" defer></script>
 </head>
@@ -53,16 +53,24 @@
     <div class="header__menu-wrapper">
       <ul class="header__menu-list">
         <li class="header__menu-item header__menu-item--current">
-          <a>Главная</a>
+          <a href="#">
+            Главная
+          </a>
         </li>
         <li class="header__menu-item">
-          <a>Каталог</a>
+          <a href="#">
+            Каталог
+          </a>
         </li>
         <li class="header__menu-item">
-          <a>Доставка</a>
+          <a href="#">
+            Доставка
+          </a>
         </li>
         <li class="header__menu-item">
-          <a>О нас</a>
+          <a href="#">
+            О нас
+          </a>
         </li>
       </ul>
     </div>
@@ -94,7 +102,7 @@
                   <p class="hero__price-old">295&#8381;</p>
                   <p class="hero__price-new">225&#8381;</p>
                 </div>
-                <button class="hero__offer button">Заказать</button>
+                <button class="hero__offer button" type="button">Заказать</button>
               </div>
             </li>
             <li class="hero__offers-item hero__offers-item--product2 slider__item"></li>
@@ -171,108 +179,99 @@
                 Цена
               </p>
               <div class="filter__container">
-                <div class="filter__slider-track"></div>
-                <input class="filter__range" type="range" min="0" max="1000" value="0" id="slider-1"
-                  oninput="slideOne()">
-                <input class="filter__range" type="range" min="0" max="1000" value="900" id="slider-2"
-                  oninput="slideTwo()">
+                <div class="filter__slider-track">
+                  <input class="filter__range" type="range" name="slider-1" min="0" max="1000" value="0" id="slider-1"
+                    oninput="slideOne()">
+                  <label for="slider-1"></label>
+
+                  <input class="filter__range" type="range" name="slider-2" min="0" max="1000" value="900" id="slider-2"
+                    oninput="slideTwo()">
+                  <label for="slider-2"></label>
+                </div>
+                <div class="filter__values">
+                  <span class="filter__number" id="range1">
+                    0
+                  </span>
+                  <span>&dash;</span>
+                  <span class="filter__number" id="range2">
+                    1000
+                  </span>
+                </div>
               </div>
-              <div class="filter__values">
-                <span class="filter__number" id="range1">
-                  0
-                </span>
-                <span> &dash; </span>
-                <span class="filter__number" id="range2">
-                  1000
-                </span>
+              <div class="filter__option">
+                <p class="filter__parametr">
+                  Наличие молока
+                </p>
+                <div class="filter__radio">
+                  <input class="radio" type="radio" id="yes" name="milk" value="yes" checked>
+                  <label for="yes">
+                    Неважно
+                  </label>
+                </div>
+                <div class="filter__radio">
+                  <input class="radio" type="radio" id="animal" name="milk" value="animal">
+                  <label for="animal">
+                    Только животное
+                  </label>
+                </div>
+                <div class="filter__radio">
+                  <input class="radio" type="radio" id="plant" name="milk" value="plant">
+                  <label for="plant">
+                    Только растительное
+                  </label>
+                </div>
+                <div class="filter__radio">
+                  <input class="radio" type="radio" id="not" name="milk" value="not" disabled>
+                  <label class="radio__label" for="not">
+                    Без молока
+                  </label>
+                </div>
+              </div>
+              <div class="filter__option">
+                <p class="filter__parametr">
+                  Страна произрастания
+                </p>
+                <div class="filter__checkbox">
+                  <input class="checkbox" type="checkbox" name="brazil" id="brazil" checked>
+                  <label class="checkbox__label" for="brazil">
+                    Бразилия
+                  </label>
+                </div>
+                <div class="filter__checkbox">
+                  <input class="checkbox" type="checkbox" name="efiop" id="efiop">
+                  <label for="efiop">
+                    Эфиопия
+                  </label>
+                </div>
+                <div class="filter__checkbox">
+                  <input class="checkbox" type="checkbox" name="columb" id="columb">
+                  <label for="columb">
+                    Колумбия
+                  </label>
+                </div>
+                <div class="filter__checkbox">
+                  <input class="checkbox" type="checkbox" name="kostarica" id="kostarica">
+                  <label for="kostarica">
+                    Коста-Рика
+                  </label>
+                </div>
+                <div class="filter__checkbox">
+                  <input class="checkbox" type="checkbox" name="peru" id="peru" disabled>
+                  <label for="peru">
+                    Перу
+                  </label>
+                </div>
               </div>
             </div>
-            <div class="filter__option">
-              <p class="filter__parametr">
-                Наличие молока
-              </p>
-              <div class="filter__radio">
-                <input class="radio" type="radio" id="yes" name="milk" value="yes" checked />
-                <label for="yes">
-                  Неважно
-                </label>
-              </div>
-              <div class="filter__radio">
-                <input class="radio" type="radio" id="animal" name="milk" value="animal" />
-                <label for="animal">
-                  Только животное
-                </label>
-              </div>
-              <div class="filter__radio">
-                <input class="radio" type="radio" id="plant" name="milk" value="plant" />
-                <label for="plant">
-                  Только растительное
-                </label>
-              </div>
-              <div class="filter__radio">
-                <input class="radio" type="radio" id="not" name="milk" value="not" disabled />
-                <label class="radio__label" for="not" disabled>
-                  Без молока
-                </label>
-              </div>
+            <div class="catalog__sorting">
             </div>
-            <div class="filter__option">
-              <p class="filter__parametr">
-                Страна произрастания
-              </p>
-              <div class="filter__checkbox">
-                <input class="checkbox" type="checkbox" id="brazil" checked />
-                <label class="checkbox__label" for="brazil">
-                  Бразилия
-                </label>
-              </div>
-              <div class="filter__checkbox">
-                <input class="checkbox" type="checkbox" id="efiop" />
-                <label for="efiop">
-                  Эфиопия
-                </label>
-              </div>
-              <div class="filter__checkbox">
-                <input class="checkbox" type="checkbox" id="columb" />
-                <label for="columb">
-                  Колумбия
-                </label>
-              </div>
-              <div class="filter__checkbox">
-                <input class="checkbox" type="checkbox" id="kostarica" />
-                <label for="kostarica">
-                  Коста-Рика
-                </label>
-              </div>
-              <div class="filter__checkbox">
-                <input class="checkbox" type="checkbox" id="peru" disabled />
-                <label for="peru">
-                  Перу
-                </label>
-              </div>
-            </div>
-          </div>
-          <div class="catalog__sorting">
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="map" data-test="map">
-      <div class="container">
-        для карты
       </div>
     </section>
   </main>
 
   <footer class="footer" data-test="footer">
-    <div class="footer__container">
-
-      <div class="main-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
-    </div>
   </footer>
 </body>
 

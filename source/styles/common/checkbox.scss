@@ -11,7 +11,7 @@
   user-select: none;
 }
 
-.checkbox + label:before {
+.checkbox + label::before {
   content: " ";
   position: absolute;
   top: -4px;
@@ -21,10 +21,10 @@
   border-radius: 12px;
   background-color: $color-base-grey;
   border: 2px solid $color-base-grey;
-  transition: .2s;
+  transition: 0.2s;
 }
 
-.checkbox + label:after {
+.checkbox + label::after {
   content: " ";
   position: absolute;
   top: -1px;
@@ -36,17 +36,17 @@
   transition: 0.2s;
 }
 
-.checkbox:checked + label:before {
+.checkbox:checked + label::before {
   background-color: $color-base-primary;
   border: 2px solid $color-base-primary;
 }
 
-.checkbox:hover + label:before {
+.checkbox:hover + label::before {
   background-color: $color-alt-primary-opacity;
   border: 2px solid $color-base-primary;
 }
 
-.checkbox:checked + label:after {
+.checkbox:checked + label::after {
   left: 20px;
 }
 
