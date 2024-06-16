@@ -60,10 +60,18 @@ h3 {
 h4 {
   font-family: $font-family;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.43;
+  font-size: $font-size;
+  line-height: $line-height;
   letter-spacing: 0.02em;
   color: $color-base-primary;
+}
+
+p {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  color: $color-base-black;
 }
 
 span {

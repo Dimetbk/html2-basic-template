@@ -1,0 +1,60 @@
+.card__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+}
+.card__item {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  background-color: $color-base-white;
+  border-radius: 4px;
+
+}
+
+.card__item:last-child {
+  margin-bottom: 40px;
+}
+
+.card__image {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  margin-bottom: 24px;
+}
+
+.card__title {
+  margin-bottom: 4px;
+}
+
+.card__description {
+  margin-bottom: 16px;
+}
+
+.card__buy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.card__price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.card__offer {
+  display: flex;
+  justify-content: right;
+  min-width: 141px;
+  height: 36px;
+  text-align: right;
+  box-sizing: border-box;
+  background-image: url("../../icons/icon-bag-button.svg");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position-x: 20;
+}
