@@ -18,6 +18,7 @@
   <link rel="apple-touch-icon" href="./favicons/favicon180.png">
   <link rel="manifest.webmanifest" href="./manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
+  <script src="scripts/range.js" defer></script>
 </head>
 
 <body class="page__body">
@@ -192,7 +193,7 @@
                     0
                   </span>
                   <span>&dash;</span>
-                  <span class="filter__number" id="range2">
+                  <span class="filter__number filter__number--max" id="range2">
                     1000
                   </span>
                 </div>
@@ -221,7 +222,7 @@
                 </div>
                 <div class="filter__radio">
                   <input class="radio" type="radio" id="not" name="milk" value="not" disabled>
-                  <label class="radio__label" for="not">
+                  <label class="radio__disabled" for="not">
                     Без молока
                   </label>
                 </div>
@@ -256,13 +257,33 @@
                 </div>
                 <div class="filter__checkbox">
                   <input class="checkbox" type="checkbox" name="peru" id="peru" disabled>
-                  <label for="peru">
+                  <label class="checkbox__disabled" for="peru">
                     Перу
                   </label>
                 </div>
               </div>
+              <div class="filter__button">
+                <button class="filter__applay button">
+                  Применить
+                </button>
+                <button class="filter__reset button">
+                  Сбросить
+                </button>
+              </div>
             </div>
             <div class="catalog__sorting">
+              <div class="catalog__cards">
+                <p class="catalog__parametr">
+                  Сортировка:
+                </p>
+                <div class="catalog__variety">
+                  по умолчанию
+                </div>
+
+
+
+              </div>
+
             </div>
           </div>
         </div>

@@ -27,6 +27,7 @@ body ul {
 
 body a {
   cursor: pointer;
+  text-decoration: none;
 }
 
 h1 {
@@ -63,4 +64,8 @@ h4 {
   line-height: 1.43;
   letter-spacing: 0.02em;
   color: $color-base-primary;
+}
+
+span {
+  color: $color-base-grey;
 }

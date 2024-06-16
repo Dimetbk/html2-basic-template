@@ -46,7 +46,16 @@
   border: 2px solid $color-base-primary;
 }
 
+.checkbox:disabled + label::before {
+  background-color: $color-alt-light-grey;
+  border: 2px solid $color-alt-light-grey;
+}
+
 .checkbox:checked + label::after {
   left: 20px;
+}
+
+.checkbox__disabled {
+  color: $color-alt-light-grey;
 }
 

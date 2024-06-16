@@ -1,14 +1,11 @@
 .filter {
-  padding: 0 20px;
-  width: 280px;
+  padding: 0;
   margin: 0 auto;
 }
 
 .filter__container {
   position: relative;
-  width: 280px;
   margin: 0 auto;
-  margin-top: 30px;
 }
 
 .filter__parametr {
@@ -23,6 +20,8 @@
 }
 
 .filter__range {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   width: 100%;
   outline: none;
@@ -38,17 +37,19 @@
   width: 100%;
   height: 5px;
   position: absolute;
-  margin: auto;
+  margin: 0 auto;
   top: 0;
   bottom: 0;
   border-radius: 5px;
 }
 
 .filter__range::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
   height: 5px;
 }
 
 .filter__range::-moz-range-track {
+  -moz-appearance: none;
   height: 5px;
 }
 
@@ -58,6 +59,7 @@
 }
 
 .filter__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
   height: 1.7em;
   width: 1.7em;
   border: 2px solid $color-alt-primary-lighter;
@@ -69,11 +71,12 @@
 }
 
 .filter__range::-moz-range-thumb {
+  -moz-appearance: none;
   height: 1.7em;
   width: 1.7em;
   cursor: pointer;
   border-radius: 50%;
-  background-color: #3264fe;
+  background-color: #fe3291;
   pointer-events: auto;
 }
 
@@ -83,7 +86,7 @@
   width: 1.7em;
   cursor: pointer;
   border-radius: 50%;
-  background-color: #3264fe;
+  background-color: #32fe65;
   pointer-events: auto;
 }
 
@@ -110,7 +113,7 @@
   justify-content: space-between;
   gap: 18px;
   width: 100%;
-  padding: 35px 0 0;
+  padding: 39px 0 0;
   margin-bottom: 30px;
   border-radius: 5px;
   text-align: center;
@@ -134,9 +137,12 @@
   text-align: center;
 }
 
+.filter__number--max {
+  color: $color-base-black;
+}
+
 .filter__option {
   margin: 0 auto;
-  width: 280px;
 }
 
 .filter__radio {
@@ -149,4 +155,23 @@
   margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.5;
+}
+
+.filter__button {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.filter__applay {
+  font-weight: $font-weight;
+  font-size: 16px;
+}
+
+.filter__reset {
+  font-weight: $font-weight;
+  font-size: 16px;
+  color: $color-base-primary;
+  background-color: $color-base-white;
 }
