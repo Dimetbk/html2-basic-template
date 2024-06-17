@@ -1,5 +1,13 @@
 .map {
-  background-color: #979933;
-  color: #ffffff;
-  padding: 10px 15px;
+  background-color: $color-bg-lightest-grey;
+}
+
+.map__container {
+  margin: 0 auto;
+  width: 320px;
+}
+
+.map__image {
+  padding-top: 44px;
+  display: block;
 }

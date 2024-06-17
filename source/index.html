@@ -35,17 +35,17 @@
             </picture>
           </div>
           <div class="header__item">
-            <button class="header__authorization" href="#">
+            <button class="header__authorization" href="#" type="button" value="Авторизация">
               <span class="visually-hidden">
                 Иконка авторизации на сайте интернет магазина по продаже кофейных напитков.
               </span>
             </button>
-            <button class="header__buy" href="#">
+            <button class="header__buy" href="#" type="button" value="В корзину">
               <span class="visually-hidden">
                 Иконка перехода в корзину интернет магазина по продаже кофейных напитков.
               </span>
             </button>
-            <button class="header-nav__toggle js-toggle-button" type="button">
+            <button class="header-nav__toggle js-toggle-button" type="button" value="Меню сайта">
               <span class="visually-hidden">
                 Открыть меню
               </span>
@@ -105,11 +105,10 @@
                   <p class="hero__price-old">295&#8381;</p>
                   <p class="hero__price-new">225&#8381;</p>
                 </div>
-                <button class="hero__offer button" type="button">Заказать</button>
+                <button class="hero__offer button" type="submit" value="Заказать">Заказать</button>
               </div>
             </li>
             <li class="hero__offers-item hero__offers-item--product2 slider__item"></li>
-            <li class="hero__offers-item hero__offers-item--product3 slider__item"></li>
           </ul>
           <p class="hero__toggles slider__toggles">
             <button class="slider__toggle slider__toggle--current" type="button">1</button>
@@ -181,98 +180,100 @@
               <p class="filter__parametr filter__parametr--special">
                 Цена
               </p>
-              <div class="filter__container">
-                <div class="filter__slider-track">
-                  <input class="filter__range" type="range" name="slider-1" min="0" max="1000" value="0" id="slider-1"
-                    oninput="slideOne()">
-                  <label for="slider-1"></label>
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <div class="filter__container">
+                  <div class="filter__slider-track">
+                    <input class="filter__range" type="range" name="price-min" min=" 0" max="1000" value="0"
+                      id="slider-1" oninput="slideOne()">
+                    <label for="slider-1"></label>
 
-                  <input class="filter__range" type="range" name="slider-2" min="0" max="1000" value="900" id="slider-2"
-                    oninput="slideTwo()">
-                  <label for="slider-2"></label>
+                    <input class="filter__range" type="range" name="price-max" min="0" max="1000" value="900"
+                      id="slider-2" oninput="slideTwo()">
+                    <label for="slider-2"></label>
+                  </div>
+                  <div class="filter__values">
+                    <span class="filter__number" id="range1">
+                      0
+                    </span>
+                    <span>&dash;</span>
+                    <span class="filter__number filter__number--max" id="range2">
+                      1000
+                    </span>
+                  </div>
                 </div>
-                <div class="filter__values">
-                  <span class="filter__number" id="range1">
-                    0
-                  </span>
-                  <span>&dash;</span>
-                  <span class="filter__number filter__number--max" id="range2">
-                    1000
-                  </span>
+                <div class="filter__option">
+                  <p class="filter__parametr">
+                    Наличие молока
+                  </p>
+                  <div class="filter__radio">
+                    <input class="radio" type="radio" id="yes" name="milk" value="yes" checked>
+                    <label for="yes">
+                      Неважно
+                    </label>
+                  </div>
+                  <div class="filter__radio">
+                    <input class="radio" type="radio" id="animal" name="milk" value="animal">
+                    <label for="animal">
+                      Только животное
+                    </label>
+                  </div>
+                  <div class="filter__radio">
+                    <input class="radio" type="radio" id="plant" name="milk" value="plant">
+                    <label for="plant">
+                      Только растительное
+                    </label>
+                  </div>
+                  <div class="filter__radio">
+                    <input class="radio" type="radio" id="not" name="milk" value="not" disabled>
+                    <label class="radio__disabled" for="not">
+                      Без молока
+                    </label>
+                  </div>
                 </div>
-              </div>
-              <div class="filter__option">
-                <p class="filter__parametr">
-                  Наличие молока
-                </p>
-                <div class="filter__radio">
-                  <input class="radio" type="radio" id="yes" name="milk" value="yes" checked>
-                  <label for="yes">
-                    Неважно
-                  </label>
+                <div class="filter__option">
+                  <p class="filter__parametr">
+                    Страна произрастания
+                  </p>
+                  <div class="filter__checkbox">
+                    <input class="checkbox" type="checkbox" name="brazil" id="brazil" checked>
+                    <label class="checkbox__label" for="brazil">
+                      Бразилия
+                    </label>
+                  </div>
+                  <div class="filter__checkbox">
+                    <input class="checkbox" type="checkbox" name="efiop" id="efiop">
+                    <label for="efiop">
+                      Эфиопия
+                    </label>
+                  </div>
+                  <div class="filter__checkbox">
+                    <input class="checkbox" type="checkbox" name="columb" id="columb">
+                    <label for="columb">
+                      Колумбия
+                    </label>
+                  </div>
+                  <div class="filter__checkbox">
+                    <input class="checkbox" type="checkbox" name="kostarica" id="kostarica">
+                    <label for="kostarica">
+                      Коста-Рика
+                    </label>
+                  </div>
+                  <div class="filter__checkbox">
+                    <input class="checkbox" type="checkbox" name="peru" id="peru" disabled>
+                    <label class="checkbox__disabled" for="peru">
+                      Перу
+                    </label>
+                  </div>
                 </div>
-                <div class="filter__radio">
-                  <input class="radio" type="radio" id="animal" name="milk" value="animal">
-                  <label for="animal">
-                    Только животное
-                  </label>
+                <div class="filter__button">
+                  <button class="filter__applay button" type="submit" value="Подбор заказа">
+                    Применить
+                  </button>
+                  <button class="filter__reset button button--white" type="reset" value="Сброс заказа">
+                    Сбросить
+                  </button>
                 </div>
-                <div class="filter__radio">
-                  <input class="radio" type="radio" id="plant" name="milk" value="plant">
-                  <label for="plant">
-                    Только растительное
-                  </label>
-                </div>
-                <div class="filter__radio">
-                  <input class="radio" type="radio" id="not" name="milk" value="not" disabled>
-                  <label class="radio__disabled" for="not">
-                    Без молока
-                  </label>
-                </div>
-              </div>
-              <div class="filter__option">
-                <p class="filter__parametr">
-                  Страна произрастания
-                </p>
-                <div class="filter__checkbox">
-                  <input class="checkbox" type="checkbox" name="brazil" id="brazil" checked>
-                  <label class="checkbox__label" for="brazil">
-                    Бразилия
-                  </label>
-                </div>
-                <div class="filter__checkbox">
-                  <input class="checkbox" type="checkbox" name="efiop" id="efiop">
-                  <label for="efiop">
-                    Эфиопия
-                  </label>
-                </div>
-                <div class="filter__checkbox">
-                  <input class="checkbox" type="checkbox" name="columb" id="columb">
-                  <label for="columb">
-                    Колумбия
-                  </label>
-                </div>
-                <div class="filter__checkbox">
-                  <input class="checkbox" type="checkbox" name="kostarica" id="kostarica">
-                  <label for="kostarica">
-                    Коста-Рика
-                  </label>
-                </div>
-                <div class="filter__checkbox">
-                  <input class="checkbox" type="checkbox" name="peru" id="peru" disabled>
-                  <label class="checkbox__disabled" for="peru">
-                    Перу
-                  </label>
-                </div>
-              </div>
-              <div class="filter__button">
-                <button class="filter__applay button">
-                  Применить
-                </button>
-                <button class="filter__reset button button--color">
-                  Сбросить
-                </button>
-              </div>
+              </form>
             </div>
             <div class="catalog__sorting">
               <div class="catalog__cards">
@@ -312,7 +313,7 @@
                     <div class="card__price">
                       225&#8381;
                     </div>
-                    <button class="card__offer button" type="button">
+                    <button class="card__offer button" type="submit" value="Добавлен в корзину">
                       В корзину
                     </button>
                   </div>
@@ -337,7 +338,7 @@
                     <div class="card__price">
                       225&#8381;
                     </div>
-                    <button class="card__offer button" type="button">
+                    <button class="card__offer button" type="submit" value="Дабавлен в корзину">
                       В корзину
                     </button>
                   </div>
@@ -362,7 +363,7 @@
                     <div class="card__price">
                       225&#8381;
                     </div>
-                    <button class="card__offer button" type="button">
+                    <button class="card__offer button" type="submit" value="Дабавлен в корзину">
                       В корзину
                     </button>
                   </div>
@@ -387,7 +388,7 @@
                     <div class="card__price">
                       225&#8381;
                     </div>
-                    <button class="card__offer button" type="button">
+                    <button class="card__offer button" type="submit" value="Дабавлен в корзину">
                       В корзину
                     </button>
                   </div>
@@ -417,6 +418,23 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="map" data-test="map">
+      <div class="map__container">
+
+        <picture>
+          <source type="image/webp" media="(min-width: 1440px)"
+            srcset="/images/map-desktop@1x.webp 1x, /images/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="/images/map-tablet@1x 1x, /images/map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="/images/map-mobile@1x.webp 1x, /images/map-mobile@2x.webp 2x">
+          <source media="(min-width: 1440px)" srcset="/images/map-desktop@1x.png 1x, /images/map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="/images/map-tablet@1x.png 1x, /images/map-tablet@2x.png 2x">
+          <img class="map__image" src="/images/map-mobile@1x.png" srcset="/images/map-mobile@2x.png 2x" width="320"
+            height="420" alt="Место нахождения на карте магазина по продаже кофейных напитков.">
+        </picture>
+
       </div>
     </section>
   </main>
