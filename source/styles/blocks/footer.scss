@@ -1,5 +1,179 @@
 .footer {
-  background-color: #33995d;
-  color: #ffffff;
-  padding: 10px 15px;
+  background-color: $color-base-white;
+}
+
+.footer__container {
+  margin: 0 auto;
+  width: 320px;
+  padding-bottom: 30px;
+}
+
+.footer__sotial {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer__logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.footer__logo-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__sotial-wrapper {
+  display: flex;
+}
+
+.footer__sotial-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer__sotial-item a {
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-base-secondary;
+  }
+
+  &:active {
+    background-color: $color-alt-primary-opacity;
+  }
+}
+
+.sotial__link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  box-sizing: border-box;
+}
+
+.sotial__link--vk {
+  background-image: url("../../icons/icon-sotial-vk.svg");
+}
+
+.sotial__link--pint {
+  background-image: url("../../icons/icon-sotial-pinterest.svg");
+}
+
+.sotial__link--ok {
+  background-image: url("../../icons/icon-sotial-odnoklasniki.svg");
+}
+
+
+.footer__shop-wrapper {
+  border-top: 1px solid $color-base-secondary;
+  padding: 20px 20px 0;
+  margin-bottom: 20px;
+}
+
+.footer__shop-list p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  padding-top: 12px;
+}
+
+.footer__shop-item {
+  padding: 4px 0;
+}
+
+.shop__link {
+  padding: 8px 0;
+}
+
+
+.footer__media-wrapper {
+  border-top: 1px solid $color-base-secondary;
+  padding: 20px 20px 0;
+  margin-bottom: 20px;
+}
+
+.footer__media-list p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  padding-top: 12px;
+}
+
+.footer__media-item {
+  padding: 4px 0;
+}
+
+.shop__link {
+  padding: 8px 0;
+}
+
+.footer__contacts-wrapper {
+  border-top: 1px solid $color-base-secondary;
+  padding: 20px 20px 0;
+  margin-bottom: 20px;
+}
+
+.footer__contacts-list p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+  padding-top: 20px;
+}
+
+.footer__contacts-item {
+  padding: 0 19px;
+}
+
+.footer__contacts-item--map {
+
+  background-image: url("../../icons/icon-map-small.svg");
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position-x: 0;
+  background-position-y: 2px;
+  border: none;
+}
+
+.footer__contacts-item--phone {
+
+  background-image: url("../../icons/icon-phone.svg");
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position-x: 0;
+  background-position-y: 10px;
+  border: none;
+}
+
+.footer__devop-wrapper {
+  border-top: 1px solid $color-base-secondary;
+  padding: 20px 20px 0
+}
+
+.footer__devop-site {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.devop__link p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  color: $color-base-grey;
 }

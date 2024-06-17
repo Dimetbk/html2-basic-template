@@ -110,11 +110,6 @@
             </li>
             <li class="hero__offers-item hero__offers-item--product2 slider__item"></li>
           </ul>
-          <p class="hero__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
         </div>
       </div>
     </section>
@@ -296,8 +291,11 @@
 
                 <li class="card__item">
                   <div class="card__image">
-                    <img src="/images/coffe-white@1x.png" width="130" height="188"
-                      alt="Изображение банки с кофейным напитком Декаф Флэт Уайт.">
+                    <picture>
+                      <source type="image/webp" srcset="/images/coffe-white@1x.webp 1x, /images/coffe-white@2x.webp 2x">
+                      <img src="/images/coffe-white@1x.png" srcset="/images/coffe-white@2x.png 2x" width="130"
+                        height="188" alt="Изображение банки с кофейным напитком Декаф Флэт Уайт.">
+                    </picture>
                   </div>
                   <div class="card__title">
                     <h3>
@@ -321,8 +319,39 @@
 
                 <li class="card__item">
                   <div class="card__image">
-                    <img src="/images/coffe-white@1x.png" width="130" height="188"
-                      alt="Изображение банки с кофейным напитком Декаф Флэт Уайт.">
+                    <picture>
+                      <source type="image/webp" srcset="/images/coffe-blue@1x.webp 1x, /images/coffe-blue@2x.webp 2x">
+                      <img src="/images/coffe-blue@1x.png" srcset="/images/coffe-blue@2x.png 2x" width="130"
+                        height="188" alt="Изображение банки с кофейным напитком Декаф Флэт Уайт.">
+                    </picture>
+                  </div>
+                  <div class="card__title">
+                    <h3>
+                      Декаф Флэт Уайт
+                    </h3>
+                  </div>
+                  <div class="card__description">
+                    <p>
+                      Кофе без кофеина из&nbsp;Эфиопии с&nbsp;натуральным фермерским молоком
+                    </p>
+                  </div>
+                  <div class="card__buy">
+                    <div class="card__price">
+                      225&#8381;
+                    </div>
+                    <button class="card__offer button" type="submit" value="Добавлен в корзину">
+                      В корзину
+                    </button>
+                  </div>
+                </li>
+
+                <li class="card__item">
+                  <div class="card__image">
+                    <picture>
+                      <source type="image/webp" srcset="/images/coffe-black@1x.webp 1x, /images/coffe-black@2x.webp 2x">
+                      <img src="/images/coffe-black@1x.png" srcset="/images/coffe-black@2x.png 2x" width="130"
+                        height="188" alt="Изображение банки с кофейным напитком Декаф Флэт Уайт.">
+                    </picture>
                   </div>
                   <div class="card__title">
                     <h3>
@@ -346,8 +375,11 @@
 
                 <li class="card__item">
                   <div class="card__image">
-                    <img src="/images/coffe-white@1x.png" width="130" height="188"
-                      alt="Изображение банки с кофейным напитком Декаф Флэт Уайт.">
+                    <picture>
+                      <source type="image/webp" srcset="/images/coffe-pink@1x.webp 1x, /images/coffe-pink@2x.webp 2x">
+                      <img src="/images/coffe-pink@1x.png" srcset="/images/coffe-pink@2x.png 2x" width="130"
+                        height="188" alt="Изображение банки с кофейным напитком Декаф Флэт Уайт.">
+                    </picture>
                   </div>
                   <div class="card__title">
                     <h3>
@@ -371,8 +403,40 @@
 
                 <li class="card__item">
                   <div class="card__image">
-                    <img src="/images/coffe-white@1x.png" width="130" height="188"
-                      alt="Изображение банки с кофейным напитком Декаф Флэт Уайт.">
+                    <picture>
+                      <source type="image/webp" srcset="/images/coffe-grow@1x.webp 1x, /images/coffe-grow@2x.webp 2x">
+                      <img src="/images/coffe-grow@1x.png" srcset="/images/coffe-grow@2x.png 2x" width="130"
+                        height="188" alt="Изображение банки с кофейным напитком Декаф Флэт Уайт.">
+                    </picture>
+                  </div>
+                  <div class="card__title">
+                    <h3>
+                      Декаф Флэт Уайт
+                    </h3>
+                  </div>
+                  <div class="card__description">
+                    <p>
+                      Кофе без кофеина из&nbsp;Эфиопии с&nbsp;натуральным фермерским молоком
+                    </p>
+                  </div>
+                  <div class="card__buy">
+                    <div class="card__price">
+                      225&#8381;
+                    </div>
+                    <button class="card__offer button" type="submit" value="Дабавлен в корзину">
+                      В корзину
+                    </button>
+                  </div>
+                </li>
+
+                <li class="card__item">
+                  <div class="card__image">
+                    <picture>
+                      <source type="image/webp"
+                        srcset="/images/coffe-yellow@1x.webp 1x, /images/coffe-yellow@2x.webp 2x">
+                      <img src="/images/coffe-yellow@1x.png" srcset="/images/coffe-yellow@2x.png 2x" width="130"
+                        height="188" alt="Изображение банки с кофейным напитком Декаф Флэт Уайт.">
+                    </picture>
                   </div>
                   <div class="card__title">
                     <h3>
@@ -420,9 +484,9 @@
         </div>
       </div>
     </section>
+
     <section class="map" data-test="map">
       <div class="map__container">
-
         <picture>
           <source type="image/webp" media="(min-width: 1440px)"
             srcset="/images/map-desktop@1x.webp 1x, /images/map-desktop@2x.webp 2x">
@@ -434,12 +498,153 @@
           <img class="map__image" src="/images/map-mobile@1x.png" srcset="/images/map-mobile@2x.png 2x" width="320"
             height="420" alt="Место нахождения на карте магазина по продаже кофейных напитков.">
         </picture>
-
       </div>
     </section>
   </main>
 
+
+
   <footer class="footer" data-test="footer">
+
+    <div class="footer__container">
+
+      <section class="footer__sotial">
+        <h2 class="visually-hidden">
+          Мы в социальных сетях.
+        </h2>
+        <div class="footer__logo-box">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="/images/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="/images/logo-desktop.svg">
+            <img class="footer__logo-image" src="/images/logo-tablet.svg" width="82" height="36"
+              alt="Логотип интернет магазина по продаже кофейных напитков.">
+          </picture>
+        </div>
+        <div class="footer__sotial-wrapper">
+          <ul class="footer__sotial-list">
+            <li class="footer__sotial-item">
+              <a class="sotial__link sotial__link--vk" href="https://vk.com">
+                <span class="visually-hidden">
+                  О нас в Вконтакте.
+                </span>
+              </a>
+            </li>
+            <li class="footer__sotial-item">
+              <a class="sotial__link sotial__link--pint" href="https://ru.pinterest.com">
+                <span class="visually-hidden">
+                  О нас в Pinterest.
+                </span>
+              </a>
+            </li>
+            <li class="footer__sotial-item">
+              <a class="sotial__link sotial__link--ok" href="https://ok.ru">
+                <span class="visually-hidden">
+                  О нас в Однокласниках.
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="footer__shop-wrapper">
+        <h4>
+          Интернет-магазин
+        </h4>
+        <ul class="footer__shop-list">
+          <li class="footer__shop-item">
+            <a class="shop__link" href="#">
+              <p>
+                Каталог
+              </p>
+            </a>
+          </li>
+          <li class="footer__shop-item">
+            <a class="shop__link" href="#">
+              <p>
+                Доставка
+              </p>
+            </a>
+          </li>
+          <li class="footer__shop-item">
+            <a class="shop__link" href="#">
+              <p>
+                Способы оплаты
+              </p>
+            </a>
+          </li>
+          <li class="footer__shop-item">
+            <a class="shop__link" href="#">
+              <p>
+                О нас
+              </p>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="footer__media-wrapper">
+        <h4>
+          Медиа
+        </h4>
+        <ul class="footer__media-list">
+          <li class="footer__media-item">
+            <a class="media__link" href="#">
+              <p>
+                Блог
+              </p>
+            </a>
+          </li>
+          <li class="footer__media-item">
+            <a class="media__link" href="#">
+              <p>
+                Информация для сми
+              </p>
+            </a>
+          </li>
+          <li class="footer__media-item">
+            <a class="media__link" href="#">
+              <p>
+                Правовая информация
+              </p>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="footer__contacts-wrapper">
+        <h4>
+          Контакты
+        </h4>
+        <ul class="footer__contacts-list">
+          <li class="footer__contacts-item footer__contacts-item--map">
+            <a class="contacts__link" href="#">
+              <p>
+                <nobr>Санкт-Петербург</nobr>, набережная<br>реки Карповки, дом 5
+              </p>
+            </a>
+          </li>
+          <li class="footer__contacts-item footer__contacts-item--phone">
+            <a class="contacts__link" href="tel:+79999999999">
+              <p>
+                +7 (999) 999-99-99
+              </p>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="footer__devop-wrapper">
+        <div class="footer__devop-site">
+          <a class="devop__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p>
+              Разработано в HTML Academy
+            </p>
+          </a>
+        </div>
+      </section>
+
+    </div>
   </footer>
 </body>
 
