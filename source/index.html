@@ -24,58 +24,61 @@
 <body class="page__body">
   <header class="header" data-test="header">
     <div class="header__container">
-      <img class="header__logo" src="/images/logo-mobile.svg" width="32" height="36"
-        alt="Логотип интернет магазина по продаже кофейных напитков.">
-      <ul class="header__nav-list">
-        <li class="header__nav-item">
-          <a class="header__authorization" href="#">
-            <span class="visually-hidden">
-              Иконка авторизации на сайте интернет магазина по продаже кофейных напитков.
-            </span>
-          </a>
-        </li>
-        <li class="header__nav-item">
-          <a class="header__buy" href="#">
-            <span class="visually-hidden">
-              Иконка перехода в корзину интернет магазина по продаже кофейных напитков.
-            </span>
-          </a>
-        </li>
-        <li class="header__nav-item">
-          <button class="header__menu header__menu--closed" type="button">
-            <span class="visually-hidden">
-              Иконка открытия-закрытия меню интернет магазина по продаже кофейных напитков.
-            </span>
-          </button>
-        </li>
-      </ul>
-    </div>
-    <div class="header__menu-wrapper">
-      <ul class="header__menu-list">
-        <li class="header__menu-item header__menu-item--current">
-          <a href="#">
-            Главная
-          </a>
-        </li>
-        <li class="header__menu-item">
-          <a href="#">
-            Каталог
-          </a>
-        </li>
-        <li class="header__menu-item">
-          <a href="#">
-            Доставка
-          </a>
-        </li>
-        <li class="header__menu-item">
-          <a href="#">
-            О нас
-          </a>
-        </li>
-      </ul>
+      <nav class="header-nav header-nav--closed  main-nav--nojs">
+        <div class="header__list">
+          <div class="header__item">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="/images/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="/images/logo-tablet.svg">
+              <img class="header__logo" src="/images/logo-mobile.svg" width="32" height="36"
+                alt="Логотип интернет магазина по продаже кофейных напитков.">
+            </picture>
+          </div>
+          <div class="header__item">
+            <button class="header__authorization" href="#">
+              <span class="visually-hidden">
+                Иконка авторизации на сайте интернет магазина по продаже кофейных напитков.
+              </span>
+            </button>
+            <button class="header__buy" href="#">
+              <span class="visually-hidden">
+                Иконка перехода в корзину интернет магазина по продаже кофейных напитков.
+              </span>
+            </button>
+            <button class="header-nav__toggle js-toggle-button" type="button">
+              <span class="visually-hidden">
+                Открыть меню
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="header-nav__wrapper">
+          <ul class="header-nav__list site-list site-list--active">
+            <li class="site-list__item ">
+              <a>
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="№">
+                Каталог
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="№">
+                Доставка
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">
+                О нас
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
   </header>
-
   <main>
     <section class="hero" data-test="hero">
       <div class="hero__container">
@@ -266,7 +269,7 @@
                 <button class="filter__applay button">
                   Применить
                 </button>
-                <button class="filter__reset button">
+                <button class="filter__reset button button--color">
                   Сбросить
                 </button>
               </div>

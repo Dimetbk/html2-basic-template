@@ -12,3 +12,35 @@
   box-sizing: border-box;
   cursor: pointer;
 }
+
+.button:hover {
+  background-color: $color-alt-primary-lighter;
+}
+
+.button:active {
+  background-color: $color-alt-primary-darker;
+}
+
+.button:default {
+  background-color: $color-alt-light-grey;
+}
+
+.button--color {
+  color: $color-base-primary;
+  background-color: $color-base-white;
+}
+
+.button--color:hover {
+  color: $color-base-white;
+  background-color: $color-alt-primary-lighter;
+}
+
+.button--color:active {
+  background-color: $color-alt-primary-darker;
+  color: $color-base-white;
+}
+
+.button--color:default {
+  background-color: $color-alt-light-grey;
+  color: $color-base-white;
+}
