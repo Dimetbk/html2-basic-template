@@ -27,12 +27,13 @@
 }
 
 .features__title {
-  margin-bottom: 36px;
+  margin-bottom: 35px;
 }
 
 .features__list {
   display: flex;
   flex-direction: column;
+
 }
 
 .features__item {
@@ -44,6 +45,9 @@
   background-repeat: no-repeat;
 }
 
+.features__subtitle {
+  padding-top: 3px;
+}
 .features__item:last-child {
   margin-bottom: 60px;
 }
@@ -66,4 +70,6 @@
 
 .features__description {
   text-align: center;
+  padding-top: 1px;
+
 }

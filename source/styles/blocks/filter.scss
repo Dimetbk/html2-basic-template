@@ -12,7 +12,7 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .filter__parametr--special {
@@ -76,7 +76,6 @@
   width: 1.7em;
   cursor: pointer;
   border-radius: 50%;
-  background-color: #fe3291;
   pointer-events: auto;
 }
 
@@ -86,7 +85,6 @@
   width: 1.7em;
   cursor: pointer;
   border-radius: 50%;
-  background-color: #32fe65;
   pointer-events: auto;
 }
 
@@ -113,7 +111,7 @@
   justify-content: space-between;
   gap: 18px;
   width: 100%;
-  padding: 39px 0 0;
+  padding: 36px 0 0;
   margin-bottom: 30px;
   border-radius: 5px;
   text-align: center;
@@ -128,7 +126,7 @@
   border: 2px solid $color-alt-primary-lighter;
   border-radius: 4px;
   padding: 8px 10px;
-  width: 118px;
+  width: 119px;
   align-items: center;
   justify-content: center;
   font-weight: 500;
@@ -143,10 +141,12 @@
 
 .filter__option {
   margin: 0 auto;
+  padding: 0;
 }
 
 .filter__radio {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  padding: 1px;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -155,6 +155,11 @@
   margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.5;
+}
+
+.filter__checkbox:last-child {
+  margin-bottom: 20px;
+  padding-bottom: 8px;
 }
 
 .filter__button {
