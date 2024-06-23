@@ -97,8 +97,21 @@
           </p>
           <ul class="hero__offers-list slider__list">
             <li class="hero__offers-item hero__offers-item--product1 slider__item">
-              <img class="hero__image" src="/images/decaf-flat-white@1x.png" width="280" height="280"
-                alt="Изображение нового продукта Декаф Флэт Уайт.">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="/images/slider-desktop-decaf-flat-white@1x.webp 1x, /images/slider-desktop-decaf-flat-white@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="/images/slider-tablet-decaf-flat-white@1x 1x, /images/slider-tablet-decaf-flat-white@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="/images/slider-mobile-decaf-flat-white@1x.webp 1x, /images/slider-mobile-decaf-flat-white@2x.webp 2x">
+                <source media="(min-width: 1440px)"
+                  srcset="/images/slider-desktop-decaf-flat-white@1x.png 1x, /images/slider-desktop-decaf-flat-white@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="/images/slider-tablet-decaf-flat-white@1x.png 1x, /images/slider-tablet-decaf-flat-white@2x.png 2x">
+                <img class="hero__image" src="/images/slider-mobile-decaf-flat-white@1x.png"
+                  srcset="/images/slider-mobile-decaf-flat-white@2x.png 2x" width="280" height="280"
+                  alt="Изображение нового продукта Декаф Флэт Уайт.">
+              </picture>
               <p class="hero__badge">
                 Новинка!
               </p>
@@ -120,6 +133,93 @@
             <li class="hero__offers-item hero__offers-item--product2 slider__item"></li>
           </ul>
         </div>
+
+        <div class="hero__offers-wrapper slider">
+          <p class="visually-hidden">
+            Наши новые предложения!
+          </p>
+          <ul class="hero__offers-list slider__list">
+            <li class="hero__offers-item hero__offers-item--product1 slider__item">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="/images/slider-desktop-lavender-latte@1x.webp 1x, /images/slider-desktop-lavender-latte@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="/images/slider-tablet-lavender-latte@1x 1x, /images/slider-tablet-lavender-latte@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="/images/slider-mobile-lavender-latte@1x.webp 1x, /images/slider-mobile-lavender-latte@2x.webp 2x">
+                <source media="(min-width: 1440px)"
+                  srcset="/images/slider-desktop-lavender-latte@1x.png 1x, /images/slider-desktop-lavender-latte@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="/images/slider-tablet-lavender-latte@1x.png 1x, /images/slider-tablet-lavender-latte@2x.png 2x">
+                <img class="hero__image" src="/images/slider-mobile-lavender-latte@1x.png"
+                  srcset="/images/slider-mobile-lavender-latte@2x.png 2x" width="280" height="280"
+                  alt="Изображение нового продукта Лавандовый Латте.">
+              </picture>
+              <p class="hero__badge">
+                Новинка!
+              </p>
+              <h1 class="hero__title">
+                Лавандовый Латте
+              </h1>
+              <p class="hero__descriprion">
+                Невероятное сочетание перуанской высокогорной арабики с&nbsp;молоком ламы и&nbsp;лавандовым сиропом
+                унесёт вас прямо на&nbsp;вершину Радужных гор
+              </p>
+              <div class="hero__buy">
+                <div class="hero__price-wrapper">
+                  <p class="hero__price-old">285&#8381;</p>
+                  <p class="hero__price-new">265&#8381;</p>
+                </div>
+                <button class="hero__offer button" type="submit" value="Заказать">Заказать</button>
+              </div>
+            </li>
+            <li class="hero__offers-item hero__offers-item--product2 slider__item"></li>
+          </ul>
+        </div>
+
+        <div class="hero__offers-wrapper slider">
+          <p class="visually-hidden">
+            Наши новые предложения!
+          </p>
+          <ul class="hero__offers-list slider__list">
+            <li class="hero__offers-item hero__offers-item--product1 slider__item">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="/images/slider-desktop-triple-espresso@1x.webp 1x, /images/slider-desktop-triple-espresso@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="/images/slider-tablet-triple-espresso@1x 1x, /images/slider-tablet-triple-espresso@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="/images/slider-mobile-triple-espresso@1x.webp 1x, /images/slider-mobile-triple-espresso@2x.webp 2x">
+                <source media="(min-width: 1440px)"
+                  srcset="/images/slider-desktop-triple-espresso@1x.png 1x, /images/slider-desktop-triple-espresso@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="/images/slider-tablet-triple-espresso@1x.png 1x, /images/slider-tablet-triple-espresso@2x.png 2x">
+                <img class="hero__image" src="/images/slider-mobile-triple-espresso@1x.png"
+                  srcset="/images/slider-mobile-triple-espresso@2x.png 2x" width="280" height="280"
+                  alt="Изображение нового продукта Тройной Эспрессо.">
+              </picture>
+              <p class="hero__badge">
+                Новинка!
+              </p>
+              <h1 class="hero__title">
+                Тройной Эспрессо
+              </h1>
+              <p class="hero__descriprion">
+                Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из&nbsp;Колумбии покажет вам,
+                что такое настоящая бодрость
+              </p>
+              <div class="hero__buy">
+                <div class="hero__price-wrapper">
+                  <p class="hero__price-old">395&#8381;</p>
+                  <p class="hero__price-new">375&#8381;</p>
+                </div>
+                <button class="hero__offer button" type="submit" value="Заказать">Заказать</button>
+              </div>
+            </li>
+            <li class="hero__offers-item hero__offers-item--product2 slider__item"></li>
+          </ul>
+        </div>
+
       </div>
     </section>
 
@@ -500,7 +600,7 @@
           <source type="image/webp" media="(min-width: 1440px)"
             srcset="/images/map-desktop@1x.webp 1x, /images/map-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)"
-            srcset="/images/map-tablet@1x 1x, /images/map-tablet@2x.webp 2x">
+            srcset="/images/map-tablet@1x.webp 1x, /images/map-tablet@2x.webp 2x">
           <source type="image/webp" srcset="/images/map-mobile@1x.webp 1x, /images/map-mobile@2x.webp 2x">
           <source media="(min-width: 1440px)" srcset="/images/map-desktop@1x.png 1x, /images/map-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="/images/map-tablet@1x.png 1x, /images/map-tablet@2x.png 2x">
