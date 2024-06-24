@@ -16,12 +16,13 @@
   width: 280px;
 
   @media (min-width: $tablet-width) {
+    padding: 0 80px;
     width: 608px;
 
   }
 
   @media (min-width: $desktop-width) {
-
+    width: 608px;
   }
 }
 
@@ -29,12 +30,43 @@
   text-align: center;
 }
 
-.hero__image {
-  margin: 20px 0 5px;
+.hero__offers-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.hero__box-image {
+  display: block;
+  margin: 20px auto 10px;
   @media (min-width: $tablet-width) {
     order: 2;
+  }
 
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+.hero__image {
+  display: block;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 476px;
+    height: 476px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+.hero__box-description {
+
+  @media (min-width: $tablet-width) {
+    margin: 60px 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,7 +78,7 @@
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 12px;
-  line-height: 133%;
+  line-height: 1.33;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $color-base-primary;
@@ -54,6 +86,16 @@
 
 .hero__title {
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 16px;
+    font-size: 56px;
+    letter-spacing: 0.02em;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .hero__descriprion {
@@ -62,15 +104,33 @@
   font-size: $font-size;
   line-height: $line-height;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .hero__buy {
-  margin: auto;
+  margin: 0 auto;
   padding-bottom: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 230px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .hero__price-wrapper {
