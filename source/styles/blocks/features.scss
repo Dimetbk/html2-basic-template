@@ -8,17 +8,33 @@
   padding: 0 20px;
   text-align: center;
   width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 728px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .features__badge {
-  margin-bottom: 4px;
-  margin-top: 50px;
+  margin: 50px 0 6px;
   font-weight: 700;
   font-size: 12px;
-  line-height: 133%;
+  line-height: 1.33;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  text-align: center;
   color: $color-base-primary;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 60px 0 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .features__wrapper {
@@ -27,13 +43,67 @@
 }
 
 .features__title {
-  margin-bottom: 35px;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 1.52;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+.features__subtitle {
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .features__list {
   display: flex;
   flex-direction: column;
 
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+.features__item {
+  @media (min-width: $tablet-width) {
+    width: 339px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+.features__description {
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .features__item {
@@ -43,11 +113,20 @@
   background-size: 52px;
   background-position: top;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 267px;
+    margin: 0;
+    background-position: left;
+    padding: 0 0 0 72px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
-.features__subtitle {
-  padding-top: 3px;
-}
 .features__item:last-child {
   margin-bottom: 60px;
 }
@@ -70,6 +149,13 @@
 
 .features__description {
   text-align: center;
-  padding-top: 1px;
+  padding-top: 4px;
 
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
