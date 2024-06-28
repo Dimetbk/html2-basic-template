@@ -6,6 +6,14 @@
 .filter__container {
   position: relative;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .filter__parametr {
@@ -16,7 +24,15 @@
 }
 
 .filter__parametr--special {
-  margin-bottom: 29px;
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .filter__range {
@@ -34,10 +50,10 @@
 }
 
 .filter__slider-track {
-  width: 100%;
+  width: 286px;
   height: 5px;
   position: absolute;
-  margin: 0 auto;
+  margin: 53px auto;
   top: 0;
   bottom: 0;
   border-radius: 5px;
@@ -110,14 +126,24 @@
   display: flex;
   justify-content: space-between;
   gap: 18px;
-  width: 100%;
-  padding: 39px 0 0;
-  margin-bottom: 30px;
+  width: 280px;
+  padding: 38px 0 0;
+  margin-bottom: 31px;
   border-radius: 5px;
   text-align: center;
   font-weight: 500;
   font-size: 25px;
   color: $color-base-black;
+
+  @media (min-width: $tablet-width) {
+    gap: 19px;
+    padding: 35px 0 0;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .filter__number {
@@ -141,11 +167,21 @@
 
 .filter__option {
   margin: 0 auto;
+  margin-bottom: 22px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 223px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .filter__radio {
-  margin-bottom: 10px;
+  margin-bottom: 11px;
   padding: 1px;
   font-size: 16px;
   line-height: 1.5;

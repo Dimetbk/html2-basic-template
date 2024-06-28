@@ -197,17 +197,17 @@
             <h2 class="catalog__title">
               Каталог кофейных напитков
             </h2>
-            <div class="catalog__filter filter">
-              <p class="filter__parametr filter__parametr--special">
-                Цена
-              </p>
-              <form action="https://echo.htmlacademy.ru" method="post">
+            <div>
+              <form class="catalog__filter filter" action="https://echo.htmlacademy.ru" method="post">
+
                 <div class="filter__container">
+                  <p class="filter__parametr filter__parametr--special">
+                    Цена
+                  </p>
                   <div class="filter__slider-track">
                     <input class="filter__range" type="range" name="price-min" min=" 0" max="1000" value="0"
                       id="slider-1" oninput="slideOne()">
                     <label for="slider-1"></label>
-
                     <input class="filter__range" type="range" name="price-max" min="0" max="1000" value="900"
                       id="slider-2" oninput="slideTwo()">
                     <label for="slider-2"></label>

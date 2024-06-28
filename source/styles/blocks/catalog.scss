@@ -5,14 +5,42 @@
 .catalog__container {
   margin: 0 auto;
   width: 280px;
+  @media (min-width: $tablet-width) {
+    width: 728px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .catalog__title {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 1.52;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .catalog__filter {
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .catalog__badge {
@@ -25,6 +53,14 @@
   text-transform: uppercase;
   text-align: center;
   color: $color-base-primary;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .catalog__sorting {
@@ -32,7 +68,7 @@
 }
 
 .catalog__cards {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,13 +78,15 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
+  padding-left: 3px;
 }
 
 .catalog__variety {
-  padding: 4px 30px 4px 10px;
+  padding: 5px 27px 4px 10px;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.05em;
   text-align: right;
   width: 165px;
   height: 32px;
@@ -57,7 +95,7 @@
   background-size: 10px;
   background-repeat: no-repeat;
   background-position: right;
-  background-position-x: 145px;
+  background-position-x: 147px;
   background-color: $color-bg-lightest-grey;
   color: $color-base-primary;
   border: none;
