@@ -10,12 +10,11 @@
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  transition: background-color .3s;
   border: none;
   border-radius: 4px;
 }
 
-.pagination__word{
+.pagination__word {
   display: none;
   color: $color-base-black;
 
@@ -23,10 +22,6 @@
     display: block;
     padding: 0;
     margin: 0 12px;
-  }
-
-  @media (min-width: $desktop-width) {
-
   }
 }
 
@@ -45,6 +40,7 @@
   background-color: $color-bg-lightest-grey;
 }
 
+
 .pagination a.disabled {
   background-color: $color-alt-light-grey;
   color: $color-base-white;
@@ -60,14 +56,12 @@
   color: $color-base-white;
 }
 
-.pagination b:hover:not(.active) {
+.pagination span:hover:not(.active) {
   background-color: $color-alt-primary-lighter;
   color: $color-base-white;
 }
-.pagination b:active:not(.active) {
+
+.pagination span:active:not(.active) {
   background-color: $color-alt-primary-darker;
   color: $color-base-white;
 }
-
-
-

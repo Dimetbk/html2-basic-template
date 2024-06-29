@@ -3,11 +3,13 @@
 }
 
 .map__container {
-  margin: 0 auto;
+  margin: 0 auto 20px;
   width: 320px;
+
 
   @media (min-width: $tablet-width) {
     width: 768px;
+    margin-bottom: 39px;
   }
 
   @media (min-width: $desktop-width) {
