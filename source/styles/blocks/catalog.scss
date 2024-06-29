@@ -10,7 +10,15 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 1360px;
+  }
+}
 
+.catalog__wrapper {
+
+  @media (min-width: $desktop-width) {
+display: flex;
+gap: 30px;
   }
 }
 
@@ -24,7 +32,15 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 34px;
+  }
+}
 
+.catalog__form {
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-top: 5px;
   }
 }
 
@@ -32,14 +48,28 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 223px 221px 223px;
     gap: 30px;
+    justify-content: center;
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 318px;
+  }
+}
 
+.catalog__filter:last-child {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
   }
 }
 
@@ -59,12 +89,16 @@
   }
 
   @media (min-width: $desktop-width) {
-
+    padding-top: 100px;
   }
 }
 
 .catalog__sorting {
   margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    width: 1011px;
+  }
 }
 
 .catalog__cards {
@@ -72,6 +106,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: right;
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .catalog__parametr {
@@ -79,6 +122,15 @@
   font-size: 16px;
   line-height: 1.5;
   padding-left: 3px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: right;
+    padding-right: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .catalog__variety {
@@ -99,6 +151,12 @@
   background-color: $color-bg-lightest-grey;
   color: $color-base-primary;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 5px 30px 4px 10px;
+    margin: 0;
+    background-position-x: 145px;
+  }
 }
 
 .catalog__variety:hover {
@@ -113,10 +171,26 @@
 .catalog__scope {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
 }
 .catalog__pagination {
   display: flex;
   gap: 20px;
   width: 100%;
   flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    justify-content: right;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }

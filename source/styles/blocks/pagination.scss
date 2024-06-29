@@ -18,11 +18,25 @@
 .pagination__word{
   display: none;
   color: $color-base-black;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding: 0;
+    margin: 0 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .pagination__symbol {
   display: block;
   color: $color-base-primary;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .pagination a.active {
@@ -54,7 +68,6 @@
   background-color: $color-alt-primary-darker;
   color: $color-base-white;
 }
-
 
 
 
