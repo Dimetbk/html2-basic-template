@@ -9,11 +9,6 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-
-  }
-
-  @media (min-width: $desktop-width) {
-
   }
 }
 
@@ -28,22 +23,15 @@
   }
 }
 
-
 .filter__parametr--special {
   margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 29px;
   }
-
-  @media (min-width: $desktop-width) {
-
-  }
 }
 
 .filter__range {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   width: 100%;
   outline: none;
@@ -75,12 +63,12 @@
 }
 
 .filter__range::-webkit-slider-runnable-track {
-  -webkit-appearance: none;
+  appearance: none;
   height: 5px;
 }
 
 .filter__range::-moz-range-track {
-  -moz-appearance: none;
+  appearance: none;
   height: 5px;
 }
 
@@ -90,7 +78,7 @@
 }
 
 .filter__range::-webkit-slider-thumb {
-  -webkit-appearance: none;
+  appearance: none;
   height: 1.7em;
   width: 1.7em;
   border: 2px solid $color-alt-primary-lighter;
@@ -102,7 +90,7 @@
 }
 
 .filter__range::-moz-range-thumb {
-  -moz-appearance: none;
+  appearance: none;
   height: 1.7em;
   width: 1.7em;
   cursor: pointer;
@@ -179,13 +167,8 @@
   line-height: 1.5;
   text-align: center;
 
-  @media (min-width: $tablet-width) {
-
-  }
-
   @media (min-width: $desktop-width) {
     padding: 6px 10px;
-
   }
 }
 
@@ -201,10 +184,6 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     width: 223px;
-  }
-
-  @media (min-width: $desktop-width) {
-
   }
 }
 
@@ -251,7 +230,6 @@
     gap: 20px;
   }
 }
-
 
 .filter__applay {
   font-weight: $font-weight;

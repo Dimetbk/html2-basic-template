@@ -24,7 +24,7 @@
 <body class="page__body">
   <header class="header" data-test="header">
     <div class="header__container">
-      <nav class="header-nav header-nav--closed main-nav--nojs">
+      <nav class="header-nav header-nav--closed header-nav--nojs">
         <div class="header__list">
           <div class="header__item">
             <picture>
@@ -62,21 +62,21 @@
             </ul>
           </div>
           <div class="header__item">
-            <button class="header__authorization" href="#" type="button" value="Авторизация">
+            <button class="header__authorization" type="button" value="Авторизация">
               <span class="visually-hidden">
                 Иконка авторизации на сайте интернет магазина по продаже кофейных напитков.
               </span>
-              <p class="header__item-text">
+              <span class="header__item-text">
                 Войти
-              </p>
+              </span>
             </button>
-            <button class="header__buy" href="#" type="button" value="В корзину">
+            <button class="header__buy" type="button" value="В корзину">
               <span class="visually-hidden">
                 Иконка перехода в корзину интернет магазина по продаже кофейных напитков.
               </span>
-              <p class="header__item-text">
+              <span class="header__item-text">
                 Корзина
-              </p>
+              </span>
             </button>
             <button class="header-nav__toggle js-toggle-button" type="button" value="Меню сайта">
               <span class="visually-hidden">
@@ -206,7 +206,7 @@
                     Цена
                   </p>
                   <div class="filter__slider-track">
-                    <input class="filter__range" type="range" name="price-min" min=" 0" max="1000" value="0"
+                    <input class="filter__range" type="range" name="price-min" min="0" max="1000" value="0"
                       id="slider-1" oninput="slideOne()">
                     <label for="slider-1"></label>
                     <input class="filter__range" type="range" name="price-max" min="0" max="1000" value="900"
@@ -247,7 +247,7 @@
                   </div>
                   <div class="filter__radio">
                     <input class="radio" type="radio" id="not" name="milk" value="not" disabled>
-                    <label class="radio__disabled" for="not">
+                    <label class="radio-disabled" for="not">
                       Без молока
                     </label>
                   </div>
@@ -258,7 +258,7 @@
                   </p>
                   <div class="filter__checkbox">
                     <input class="checkbox" type="checkbox" name="brazil" id="brazil" checked>
-                    <label class="checkbox__label" for="brazil">
+                    <label class="checkbox-label" for="brazil">
                       Бразилия
                     </label>
                   </div>
@@ -282,7 +282,7 @@
                   </div>
                   <div class="filter__checkbox">
                     <input class="checkbox" type="checkbox" name="peru" id="peru" disabled>
-                    <label class="checkbox__disabled" for="peru">
+                    <label class="checkbox-disabled" for="peru">
                       Перу
                     </label>
                   </div>
@@ -314,150 +314,150 @@
                   </option>
                 </select>
               </div>
-              <ul class="catalog__scope card__list">
+              <ul class="catalog__list card-list">
 
-                <li class="card__item">
-                  <div class="card__image">
+                <li class="card-list__item">
+                  <div class="card-list__image">
                     <picture>
                       <source type="image/webp" srcset="/images/coffe-white@1x.webp 1x, /images/coffe-white@2x.webp 2x">
                       <img src="/images/coffe-white@1x.png" srcset="/images/coffe-white@2x.png 2x" width="130"
                         height="188" alt="Изображение банки с кофейным напитком Декаф Флэт Уайт.">
                     </picture>
                   </div>
-                  <div class="card__title">
+                  <div class="card-list__title">
                     <h3>
                       Декаф Флэт Уайт
                     </h3>
                   </div>
-                  <div class="card__description">
+                  <div class="card-list__description">
                     <p>
                       Кофе без кофеина из&nbsp;Эфиопии с&nbsp;натуральным фермерским молоком
                     </p>
                   </div>
-                  <div class="card__buy">
-                    <div class="card__price">
+                  <div class="card-list__buy">
+                    <div class="card-list__price">
                       225&#8381;
                     </div>
-                    <button class="card__offer button" type="submit" value="Добавлен в корзину">
+                    <button class="card-list__offer button" type="submit" value="Добавлен в корзину">
                       В корзину
                     </button>
                   </div>
                 </li>
 
-                <li class="card__item">
-                  <div class="card__image">
+                <li class="card-list__item">
+                  <div class="card-list__image">
                     <picture>
                       <source type="image/webp" srcset="/images/coffe-blue@1x.webp 1x, /images/coffe-blue@2x.webp 2x">
                       <img src="/images/coffe-blue@1x.png" srcset="/images/coffe-blue@2x.png 2x" width="130"
                         height="188" alt="Изображение банки с кофейным напитком Декаф Флэт Уайт.">
                     </picture>
                   </div>
-                  <div class="card__title">
+                  <div class="card-list__title">
                     <h3>
                       Декаф Флэт Уайт
                     </h3>
                   </div>
-                  <div class="card__description">
+                  <div class="card-list__description">
                     <p>
                       Кофе без кофеина из&nbsp;Эфиопии с&nbsp;натуральным фермерским молоком
                     </p>
                   </div>
-                  <div class="card__buy">
-                    <div class="card__price">
+                  <div class="card-list__buy">
+                    <div class="card-list__price">
                       225&#8381;
                     </div>
-                    <button class="card__offer button" type="submit" value="Добавлен в корзину">
+                    <button class="card-list__offer button" type="submit" value="Добавлен в корзину">
                       В корзину
                     </button>
                   </div>
                 </li>
 
-                <li class="card__item">
-                  <div class="card__image">
+                <li class="card-list__item">
+                  <div class="card-list__image">
                     <picture>
                       <source type="image/webp" srcset="/images/coffe-black@1x.webp 1x, /images/coffe-black@2x.webp 2x">
                       <img src="/images/coffe-black@1x.png" srcset="/images/coffe-black@2x.png 2x" width="130"
                         height="188" alt="Изображение банки с кофейным напитком Декаф Флэт Уайт.">
                     </picture>
                   </div>
-                  <div class="card__title">
+                  <div class="card-list__title">
                     <h3>
                       Декаф Флэт Уайт
                     </h3>
                   </div>
-                  <div class="card__description">
+                  <div class="card-list__description">
                     <p>
                       Кофе без кофеина из&nbsp;Эфиопии с&nbsp;натуральным фермерским молоком
                     </p>
                   </div>
-                  <div class="card__buy">
-                    <div class="card__price">
+                  <div class="card-list__buy">
+                    <div class="card-list__price">
                       225&#8381;
                     </div>
-                    <button class="card__offer button" type="submit" value="Дабавлен в корзину">
+                    <button class="card-list__offer button" type="submit" value="Дабавлен в корзину">
                       В корзину
                     </button>
                   </div>
                 </li>
 
-                <li class="card__item">
-                  <div class="card__image">
+                <li class="card-list__item">
+                  <div class="card-list__image">
                     <picture>
                       <source type="image/webp" srcset="/images/coffe-pink@1x.webp 1x, /images/coffe-pink@2x.webp 2x">
                       <img src="/images/coffe-pink@1x.png" srcset="/images/coffe-pink@2x.png 2x" width="130"
                         height="188" alt="Изображение банки с кофейным напитком Декаф Флэт Уайт.">
                     </picture>
                   </div>
-                  <div class="card__title">
+                  <div class="card-list__title">
                     <h3>
                       Декаф Флэт Уайт
                     </h3>
                   </div>
-                  <div class="card__description">
+                  <div class="card-list__description">
                     <p>
                       Кофе без кофеина из&nbsp;Эфиопии с&nbsp;натуральным фермерским молоком
                     </p>
                   </div>
-                  <div class="card__buy">
-                    <div class="card__price">
+                  <div class="card-list__buy">
+                    <div class="card-list__price">
                       225&#8381;
                     </div>
-                    <button class="card__offer button" type="submit" value="Дабавлен в корзину">
+                    <button class="card-list__offer button" type="submit" value="Дабавлен в корзину">
                       В корзину
                     </button>
                   </div>
                 </li>
 
-                <li class="card__item">
-                  <div class="card__image">
+                <li class="card-list__item">
+                  <div class="card-list__image">
                     <picture>
                       <source type="image/webp" srcset="/images/coffe-grow@1x.webp 1x, /images/coffe-grow@2x.webp 2x">
                       <img src="/images/coffe-grow@1x.png" srcset="/images/coffe-grow@2x.png 2x" width="130"
                         height="188" alt="Изображение банки с кофейным напитком Декаф Флэт Уайт.">
                     </picture>
                   </div>
-                  <div class="card__title">
+                  <div class="card-list__title">
                     <h3>
                       Декаф Флэт Уайт
                     </h3>
                   </div>
-                  <div class="card__description">
+                  <div class="card-list__description">
                     <p>
                       Кофе без кофеина из&nbsp;Эфиопии с&nbsp;натуральным фермерским молоком
                     </p>
                   </div>
-                  <div class="card__buy">
-                    <div class="card__price">
+                  <div class="card-list__buy">
+                    <div class="card-list__price">
                       225&#8381;
                     </div>
-                    <button class="card__offer button" type="submit" value="Дабавлен в корзину">
+                    <button class="card-list__offer button" type="submit" value="Дабавлен в корзину">
                       В корзину
                     </button>
                   </div>
                 </li>
 
-                <li class="card__item">
-                  <div class="card__image">
+                <li class="card-list__item">
+                  <div class="card-list__image">
                     <picture>
                       <source type="image/webp"
                         srcset="/images/coffe-yellow@1x.webp 1x, /images/coffe-yellow@2x.webp 2x">
@@ -465,21 +465,21 @@
                         height="188" alt="Изображение банки с кофейным напитком Декаф Флэт Уайт.">
                     </picture>
                   </div>
-                  <div class="card__title">
+                  <div class="card-list__title">
                     <h3>
                       Декаф Флэт Уайт
                     </h3>
                   </div>
-                  <div class="card__description">
+                  <div class="card-list__description">
                     <p>
                       Кофе без кофеина из&nbsp;Эфиопии с&nbsp;натуральным фермерским молоком
                     </p>
                   </div>
-                  <div class="card__buy">
-                    <div class="card__price">
+                  <div class="card-list__buy">
+                    <div class="card-list__price">
                       225&#8381;
                     </div>
-                    <button class="card__offer button" type="submit" value="Дабавлен в корзину">
+                    <button class="card-list__offer button" type="submit" value="Дабавлен в корзину">
                       В корзину
                     </button>
                   </div>
@@ -514,6 +514,9 @@
     </section>
 
     <section class="map" data-test="map">
+      <h2 class="visually-hidden">
+        Наше местонахождение.
+      </h2>
       <div class="map__container">
         <picture>
           <source type="image/webp" media="(min-width: 1440px)"
@@ -533,9 +536,7 @@
 
 
   <footer class="footer" data-test="footer">
-
     <div class="footer__container">
-
       <section class="footer__sotial">
         <h2 class="visually-hidden">
           Мы в социальных сетях.
@@ -552,23 +553,23 @@
           </p>
         </div>
         <div class="footer__sotial-wrapper">
-          <ul class="footer__sotial-list">
-            <li class="footer__sotial-item">
-              <a class="sotial__link sotial__link--vk" href="https://vk.com">
+          <ul class="footer__sotial-list sotial-list">
+            <li class="sotial-list__item">
+              <a class="sotial-list__link sotial-list__link--vk" href="https://vk.com">
                 <span class="visually-hidden">
                   О нас в Вконтакте.
                 </span>
               </a>
             </li>
-            <li class="footer__sotial-item">
-              <a class="sotial__link sotial__link--pint" href="https://ru.pinterest.com">
+            <li class="sotial-list__item">
+              <a class="sotial-list__link sotial-list__link--pint" href="https://ru.pinterest.com">
                 <span class="visually-hidden">
                   О нас в Pinterest.
                 </span>
               </a>
             </li>
-            <li class="footer__sotial-item">
-              <a class="sotial__link sotial__link--ok" href="https://ok.ru">
+            <li class="sotial-list__item">
+              <a class="sotial-list__link sotial-list__link--ok" href="https://ok.ru">
                 <span class="visually-hidden">
                   О нас в Однокласниках.
                 </span>
@@ -582,30 +583,30 @@
         <h4>
           Интернет-магазин
         </h4>
-        <ul class="footer__shop-list">
-          <li class="footer__shop-item">
-            <a class="shop__link" href="#">
+        <ul class="footer__shop-list shop-list">
+          <li class="shop-list__item">
+            <a class="shop-list__link" href="#">
               <p>
                 Каталог
               </p>
             </a>
           </li>
-          <li class="footer__shop-item">
-            <a class="shop__link" href="#">
+          <li class="shop-list__item">
+            <a class="shop-list__link" href="#">
               <p>
                 Доставка
               </p>
             </a>
           </li>
-          <li class="footer__shop-item">
-            <a class="shop__link" href="#">
+          <li class="shop-list__item">
+            <a class="shop-list__link" href="#">
               <p>
                 Способы оплаты
               </p>
             </a>
           </li>
-          <li class="footer__shop-item">
-            <a class="shop__link" href="#">
+          <li class="shop-list__item">
+            <a class="shop-list__link" href="#">
               <p>
                 О нас
               </p>
@@ -618,23 +619,23 @@
         <h4>
           Медиа
         </h4>
-        <ul class="footer__media-list">
-          <li class="footer__media-item">
-            <a class="media__link" href="#">
+        <ul class="footer__media-list media-list">
+          <li class="media-list__item">
+            <a class="media-list__link" href="#">
               <p>
                 Блог
               </p>
             </a>
           </li>
-          <li class="footer__media-item">
-            <a class="media__link" href="#">
+          <li class="media-list__item">
+            <a class="media-list__link" href="#">
               <p>
                 Информация для сми
               </p>
             </a>
           </li>
-          <li class="footer__media-item">
-            <a class="media__link" href="#">
+          <li class="media-list__item">
+            <a class="media-list__link" href="#">
               <p>
                 Правовая информация
               </p>
@@ -647,15 +648,15 @@
         <h4>
           Контакты
         </h4>
-        <ul class="footer__contacts-list">
-          <li class="footer__contacts-item footer__contacts-item--map">
+        <ul class="footer__contacts-list contacts-list">
+          <li class="contacts-list__item contacts-list__item--map">
             <a class="contacts__link" href="#">
-              <p>
+              <span>
                 <nobr>Санкт-Петербург</nobr>, набережная&nbsp;реки Карповки, дом 5
-              </p>
+              </span>
             </a>
           </li>
-          <li class="footer__contacts-item footer__contacts-item--phone">
+          <li class="contacts-list__item contacts-list__item--phone">
             <a class="contacts__link" href="tel:+79999999999">
               <p>
                 +7 (999) 999-99-99
@@ -666,18 +667,17 @@
       </section>
 
       <section class="footer__devop-wrapper">
-        <div class="footer__devop-site">
-          <a class="devop__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <p class="devop__link-text">
+        <div class="footer__devop-site devop-site">
+          <a class="devop-site__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="devop-site__text">
               Разработано в
             </p>
-            <p class="devop__link-logo">
+            <p class="devop-site__logo">
               HTML Academy
             </p>
           </a>
         </div>
       </section>
-
     </div>
   </footer>
 </body>

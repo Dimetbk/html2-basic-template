@@ -33,7 +33,7 @@
   @media (min-width: $desktop-width) {
     grid-column-start: 1;
     flex-direction: column;
-    justify-content:start;
+    justify-content: start;
   }
 }
 
@@ -87,7 +87,7 @@
   gap: 20px;
 }
 
-.footer__sotial-item a {
+.sotial-list__item a {
   cursor: pointer;
 
   &:hover {
@@ -99,7 +99,7 @@
   }
 }
 
-.sotial__link {
+.sotial-list__link {
   display: block;
   width: 40px;
   height: 40px;
@@ -109,15 +109,15 @@
   box-sizing: border-box;
 }
 
-.sotial__link--vk {
+.sotial-list__link--vk {
   background-image: url("../../icons/icon-sotial-vk.svg");
 }
 
-.sotial__link--pint {
+.sotial-list__link--pint {
   background-image: url("../../icons/icon-sotial-pinterest.svg");
 }
 
-.sotial__link--ok {
+.sotial-list__link--ok {
   background-image: url("../../icons/icon-sotial-odnoklasniki.svg");
 }
 
@@ -138,7 +138,7 @@
   }
 }
 
-.footer__shop-wrapper h4{
+.footer__shop-wrapper h4 {
   margin-bottom: 10px;
   padding: 0;
 }
@@ -151,16 +151,16 @@
   text-transform: uppercase;
 }
 
-.footer__shop-item {
+.shop-list__item {
   padding: 0;
   margin-bottom: 5px;
 }
 
-.shop__link {
+.shop-list__link {
   padding: 0;
 }
 
-.shop__link p {
+.shop-list__link p {
   padding: 8px 0;
 }
 
@@ -180,7 +180,7 @@
   }
 }
 
-.footer__media-wrapper h4{
+.footer__media-wrapper h4 {
   margin-bottom: 10px;
   padding: 0;
 }
@@ -193,16 +193,16 @@
   text-transform: uppercase;
 }
 
-.footer__media-item {
+.media-list__item {
   padding: 0;
   margin-bottom: 5px;
 }
 
-.media__link {
+.media-list__link {
   padding: 0;
 }
 
-.media__link p {
+.media-list__link p {
   padding: 8px 0;
 }
 
@@ -233,12 +233,12 @@
   line-height: 1.43;
 }
 
-.footer__contacts-item {
+.contacts-list__item {
   padding: 0 0 0 19px;
-  margin-bottom: 16px ;
+  margin-bottom: 16px;
 }
 
-.footer__contacts-item--map {
+.contacts-list__item--map {
 
   background-image: url("../../icons/icon-map-small.svg");
   background-size: 13px;
@@ -256,7 +256,7 @@
   }
 }
 
-.footer__contacts-item--phone {
+.contacts-list__item--phone {
 
   background-image: url("../../icons/icon-phone.svg");
   background-size: 13px;
@@ -287,29 +287,27 @@
 
   display: flex;
   justify-content: center;
-
 }
 
-.devop__link {
+.devop-site__link {
   display: flex;
   justify-content: center;
   gap: 3px;
 }
 
-.devop__link p {
+.devop-site__link p {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.33;
   color: $color-base-grey;
 }
 
-.devop__link-logo {
+.devop-site__logo {
   position: relative;
   padding-right: 16px;
   background-image: url("../../icons/icon-logo-academy.svg");
   background-size: 12px;
   background-repeat: no-repeat;
   background-position: right;
-
   border: none;
 }

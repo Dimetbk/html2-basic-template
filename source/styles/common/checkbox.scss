@@ -4,7 +4,7 @@
   opacity: 0;
 }
 
-.checkbox__label {
+.checkbox-label {
   padding-bottom: 10px;
 }
 
@@ -59,7 +59,6 @@
   left: 20px;
 }
 
-.checkbox__disabled {
+.checkbox-disabled {
   color: $color-alt-light-grey;
 }
-
