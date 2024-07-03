@@ -256,6 +256,10 @@
   }
 }
 
+.contacts-list__link {
+  color: $color-base-black;
+}
+
 .contacts-list__item--phone {
 
   background-image: url("../../icons/icon-phone.svg");

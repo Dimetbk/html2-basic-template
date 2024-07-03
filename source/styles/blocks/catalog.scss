@@ -16,7 +16,6 @@
 }
 
 .catalog__wrapper {
-
   @media (min-width: $desktop-width) {
     display: flex;
     gap: 30px;
@@ -38,7 +37,6 @@
 }
 
 .catalog__form {
-
   @media (min-width: $desktop-width) {
     margin: 0;
     padding-top: 5px;
@@ -173,6 +171,7 @@
     margin-bottom: 60px;
   }
 }
+
 .catalog__pagination {
   display: flex;
   gap: 20px;
