@@ -5,13 +5,16 @@
 .catalog__container {
   margin: 0 auto;
   width: 280px;
+  padding-bottom: 44px;
 
   @media (min-width: $tablet-width) {
     width: 728px;
+    padding-bottom: 90px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1360px;
+    padding-bottom: 120px;
   }
 }
 

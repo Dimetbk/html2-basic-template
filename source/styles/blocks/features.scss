@@ -21,7 +21,8 @@
 }
 
 .features__badge {
-  margin: 50px 0 6px;
+  padding: 50px 0 6px;
+  margin: 0;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.33;
@@ -31,11 +32,11 @@
   color: $color-base-primary;
 
   @media (min-width: $tablet-width) {
-    margin: 60px 0 6px;
+    padding: 60px 0 6px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 100px 0 6px;
+    padding: 100px 0 6px;
   }
 }
 

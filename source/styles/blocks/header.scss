@@ -40,6 +40,7 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    padding: 24px 0;
   }
 }
 
@@ -322,4 +323,10 @@
       transform: translateX(-50%);
     }
   }
+}
+
+.site-list__item--presence a {
+  @media (min-width: $tablet-width) {
+    color: $color-base-primary;
+}
 }

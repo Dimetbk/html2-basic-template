@@ -5,9 +5,10 @@
 .footer__container {
   margin: 0 auto;
   width: 320px;
-  padding-bottom: 30px;
+  padding: 20px 0 30px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 39px;
     width: 728px;
     display: grid;
     grid-template-columns: 223px 222px 223px;
