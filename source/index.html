@@ -98,12 +98,12 @@
   <main>
     <section class="hero" data-test="hero">
       <div class="hero__container">
-        <div class="hero__offers-wrapper slider">
-          <p class="visually-hidden">
-            Наши новые предложения!
-          </p>
-          <ul class="hero__offers-list slider__list">
-            <li class="hero__offers-item hero__offers-item--product1 slider__item">
+        <p class="visually-hidden">
+          Наши новые предложения!
+        </p>
+        <div class="hero__offers-slider">
+          <div class="hero__offers-list">
+            <div class="hero__offers-item hero__offers-item--product1">
               <div class="hero__box-image">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)"
@@ -134,7 +134,9 @@
                   Декаф Флэт Уайт
                 </h1>
                 <p class="hero__descriprion">
-                  Свежесваренный кофе без кофеина из&nbsp;Эфиопии с&nbsp;натуральным фермерским молоком&nbsp;&mdash; то,
+                  Свежесваренный кофе без кофеина из&nbsp;Эфиопии с&nbsp;натуральным фермерским
+                  молоком&nbsp;&mdash;
+                  то,
                   что нужно для расслабления после тяжёлого рабочего дня
                 </p>
                 <div class="hero__buy">
@@ -145,11 +147,99 @@
                   <button class="hero__offer button" type="submit" value="Заказать">Заказать</button>
                 </div>
               </div>
-            </li>
-          </ul>
+            </div>
+
+            <div class="hero__offers-item hero__offers-item--product2">
+              <div class="hero__box-image">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="/images/slider-desktop-lavender-latte@1x.webp 1x, /images/slider-desktop-lavender-latte@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="/images/slider-tablet-lavender-latte@1x.webp 1x, /images/slider-tablet-lavender-latte@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="/images/slider-mobile-lavender-latte@1x.webp 1x, /images/slider-mobile-lavender-latte@2x.webp 2x">
+                  <source media="(min-width: 1440px)"
+                    srcset="/images/slider-desktop-lavender-latte@1x.png 1x, /images/slider-desktop-lavender-latte@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="/images/slider-tablet-lavender-latte@1x.png 1x, /images/slider-tablet-lavender-latte@2x.png 2x">
+                  <img class="hero__image" src="/images/slider-mobile-lavender-latte@1x.png"
+                    srcset="/images/slider-mobile-lavender-latte@2x.png 2x" width="280" height="280"
+                    alt="Изображение нового продукта Лавандовый Латте.">
+                </picture>
+              </div>
+              <div class="hero__box-description">
+                <p class="hero__badge">
+                  Новинка!
+                </p>
+                <h1 class="hero__title">
+                  Лавандовый Латте
+                </h1>
+                <p class="hero__descriprion">
+                  Невероятное сочетание перуанской высокогорной арабики с&nbsp;молоком ламы и&nbsp;лавандовым сиропом
+                  унесёт вас прямо на&nbsp;вершину Радужных гор
+                </p>
+                <div class="hero__buy">
+                  <div class="hero__price-wrapper">
+                    <p class="hero__price-old">285&#8381;</p>
+                    <p class="hero__price-new">265&#8381;</p>
+                  </div>
+                  <button class="hero__offer button" type="submit" value="Заказать">Заказать</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero__offers-item hero__offers-item--product3">
+              <div class="hero__box-image">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="/images/slider-desktop-triple-espresso@1x.webp 1x, /images/slider-desktop-triple-espresso@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="/images/slider-tablet-triple-espresso@1x.webp 1x, /images/slider-tablet-triple-espresso@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="/images/slider-mobile-triple-espresso@1x.webp 1x, /images/slider-mobile-triple-espresso@2x.webp 2x">
+                  <source media="(min-width: 1440px)"
+                    srcset="/images/slider-desktop-triple-espresso@1x.png 1x, /images/slider-desktop-triple-espresso@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="/images/slider-tablet-triple-espresso@1x.png 1x, /images/slider-tablet-triple-espresso@2x.png 2x">
+                  <img class="hero__image" src="/images/slider-mobile-triple-espresso@1x.png"
+                    srcset="/images/slider-mobile-triple-espresso@2x.png 2x" width="280" height="280"
+                    alt="Изображение нового продукта Тройной Эспрессо.">
+                </picture>
+              </div>
+              <div class="hero__box-description">
+                <p class="hero__badge">
+                  Новинка!
+                </p>
+                <h1 class="hero__title">
+                  Тройной Эспрессо
+                </h1>
+                <p class="hero__descriprion">
+                  Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из&nbsp;Колумбии покажет
+                  вам,
+                  что такое настоящая бодрость
+                </p>
+                <div class="hero__buy">
+                  <div class="hero__price-wrapper">
+                    <p class="hero__price-old">395&#8381;</p>
+                    <p class="hero__price-new">375&#8381;</p>
+                  </div>
+                  <button class="hero__offer button" type="submit" value="Заказать">Заказать</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="hero__button-preview">
+            <div class="hero__btn"></div>
+          </button>
+          <button class="hero__button-next">
+
+
+          </button>
         </div>
 
       </div>
+
     </section>
 
     <section class="features" data-test="features">

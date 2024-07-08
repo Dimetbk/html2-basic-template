@@ -21,12 +21,71 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1280px;
+    width: 1440px;
+    padding: 0;
+  }
+}
+
+.hero__offers-slider {
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    height: 714px;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+.hero__button-preview {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 0;
+    border: none;
+    background-color: transparent;
+    width: 80px;
+    height: 714px;
+    cursor: pointer;
+  }
+
+  &:hover {
+    background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+
+    .hero__btn {
+      background: #c50c0c;
+    }
+
+  }
+
+  &:active {
+    background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  }
+}
+
+.hero__btn {
+  @media (min-width: $desktop-width) {
+    width: 20px;
+    height: 20px;
+    left: 0 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    background-image:url("../../icons/slider-arrow-back.svg");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    mask-image: url("../../icons/slider-arrow-back.svg");
+    mask-size: 20px 20px;
+    mask-repeat: no-repeat;
   }
 }
 
 .hero__offers-list {
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    transition: all 1s;
+  }
 }
 
 .hero__offers-item {
@@ -50,7 +109,7 @@
 
   @media (min-width: $desktop-width) {
     order: 0;
-    margin: 30px 30px 84px 25px;
+    margin: 30px 30px 84px 105px;
   }
 }
 
