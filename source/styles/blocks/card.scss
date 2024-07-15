@@ -1,10 +1,10 @@
 .card-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 19px;
 
   @media (min-width: $tablet-width) {
-    gap: 30px;
+    gap: 29px;
   }
 }
 

@@ -78,9 +78,14 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    letter-spacing: 0.1em;
 
     &:hover {
       color: $color-base-primary;
+
+      .header__buy {
+        background: $color-base-primary;
+      }
     }
   }
 }
@@ -119,7 +124,7 @@
   top: 0;
   right: 0;
   z-index: 2;
-  display: block;
+  display: inline-block;
   width: 60px;
   height: 60px;
   background-color: $color-base-white;

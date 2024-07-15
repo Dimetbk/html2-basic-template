@@ -12,40 +12,53 @@
 
 .hero__container {
   margin: 0 auto;
-  padding: 0 20px;
-  width: 280px;
+  padding: 0;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 80px;
-    width: 600px;
+    width: 768px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
-    padding: 0;
   }
 }
 
 .hero__offers-slider {
+  width: 320px;
+  height: 656px;
+  overflow: hidden;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 828px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 1440px;
     height: 714px;
-    overflow: hidden;
-    position: relative;
   }
 }
 
 .hero__button-preview {
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    display: inline-block;
-    left: 0;
-    top: 0;
-    border: none;
-    background: transparent;
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 0px;
+  border: none;
+  background: transparent;
+  width: 20px;
+  height: 656px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
     width: 80px;
+    height: 640px;
+  }
+
+  @media (min-width: $desktop-width) {
     height: 714px;
-    cursor: pointer;
   }
 
   &:hover, &:focus {
@@ -67,33 +80,37 @@
 }
 
 .hero__btn-preview {
-  @media (min-width: $desktop-width) {
-    width: 20px;
-    height: 20px;
-    left: 0 30px;
-    top: 50%;
-    transform: translateY(-50%);
-    display: inline-block;
-    background-image:url("../../icons/slider-arrow-back.svg");
-    background-size: 20px 20px;
-    background-repeat: no-repeat;
-    mask-image: url("../../icons/slider-arrow-back.svg");
-    mask-size: 20px 20px;
-    mask-repeat: no-repeat;
-  }
+  width: 20px;
+  height: 20px;
+  left: 0 30px;
+  top: 50%;
+  display: inline-block;
+  background-image:url("../../icons/slider-arrow-back.svg");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  mask-image: url("../../icons/slider-arrow-back.svg");
+  mask-size: 20px 20px;
+  mask-repeat: no-repeat;
 }
 
 .hero__button-next {
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    display: inline-block;
-    right: 0;
-    top: 0;
-    border: none;
-    background: transparent;
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  top: 0;
+  border: none;
+  background: transparent;
+  width: 20px;
+  height: 656px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
     width: 80px;
+    height: 640px;
+  }
+
+  @media (min-width: $desktop-width) {
     height: 714px;
-    cursor: pointer;
   }
 
   &:hover, &:focus {
@@ -115,28 +132,30 @@
 }
 
 .hero__btn-next {
-  @media (min-width: $desktop-width) {
-    width: 20px;
-    height: 20px;
-    right: 0 30px;
-    top: 50%;
-    transform: translateY(-50%);
-    display: inline-block;
-    background-image:url("../../icons/slider-arrow-to.svg");
-    background-size: 20px 20px;
-    background-repeat: no-repeat;
-    mask-image: url("../../icons/slider-arrow-to.svg");
-    mask-size: 20px 20px;
-    mask-repeat: no-repeat;
-  }
+  width: 20px;
+  height: 20px;
+  right: 0 30px;
+  top: 50%;
+  display: inline-block;
+  background-image:url("../../icons/slider-arrow-to.svg");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  mask-image: url("../../icons/slider-arrow-to.svg");
+  mask-size: 20px 20px;
+  mask-repeat: no-repeat;
 }
 
 .hero__points {
   @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 24px;
     display: flex;
     justify-content: space-between;
     position: absolute;
     gap: 8px;
+    bottom: 60px;
+    left: 619px;
+    align-items: center;
   }
 }
 
@@ -148,6 +167,13 @@
     height: 4px;
     background-color: $color-base-white;
     cursor: pointer;
+
+    &:hover, &:focus {
+      background-color: $color-alt-primary-opacity;
+    }
+    &:active {
+      background-color: $color-base-primary;
+    }
   }
 }
 
@@ -161,12 +187,26 @@
 }
 
 .hero__offers-item {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
 
+  @media (min-width: $tablet-width) {
+    overflow: hidden;
+  }
+
   @media (min-width: $desktop-width) {
     flex-direction: row;
+}
+}
+
+.activeSlide {
+  display:flex;
+}
+
+.activeImage {
+  @media (min-width: $desktop-width) {
+    background-color: $color-base-primary;
   }
 }
 
@@ -246,21 +286,22 @@
 }
 
 .hero__descriprion {
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
   font-weight: $font-weight;
   font-size: $font-size;
   line-height: $line-height;
+  width: 280px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1.6;
+    width: 600px;
   }
 
   @media (min-width: $desktop-width) {
     text-align: left;
-    width: 600px;
-    margin-bottom: 40px;
+    margin: 0 0 40px 0;
   }
 }
 
