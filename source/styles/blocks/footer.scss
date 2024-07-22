@@ -88,14 +88,12 @@
   gap: 20px;
 }
 
-.sotial-list__item  {
-  &:hover {
-    background-color: $color-base-secondary;
-  }
+.sotial-list__item:hover {
+  background-color: $color-base-secondary;
+}
 
-  &:active {
-    background-color: $color-alt-primary-opacity;
-  }
+.sotial-list__item:active {
+  background-color: $color-alt-primary-opacity;
 }
 
 .sotial-list__link {

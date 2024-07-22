@@ -45,7 +45,7 @@
   position: absolute;
   display: inline-block;
   left: 0;
-  top: 0px;
+  top: 0;
   border: none;
   background: transparent;
   width: 20px;
@@ -61,7 +61,8 @@
     height: 714px;
   }
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
   }
 
@@ -80,17 +81,22 @@
 }
 
 .hero__btn-preview {
+  position: absolute;
   width: 20px;
   height: 20px;
-  left: 0 30px;
   top: 50%;
+  transform: translateY(-50%);
   display: inline-block;
-  background-image:url("../../icons/slider-arrow-back.svg");
+  background-image: url("../../icons/slider-arrow-back.svg");
   background-size: 20px 20px;
   background-repeat: no-repeat;
   mask-image: url("../../icons/slider-arrow-back.svg");
   mask-size: 20px 20px;
   mask-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    left: 30px;
+  }
 }
 
 .hero__button-next {
@@ -113,8 +119,9 @@
     height: 714px;
   }
 
-  &:hover, &:focus {
-    background: linear-gradient(90deg,rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+  &:hover,
+  &:focus {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
   }
 
   &:active {
@@ -132,17 +139,23 @@
 }
 
 .hero__btn-next {
+  position: absolute;
   width: 20px;
   height: 20px;
-  right: 0 30px;
+  right: 0;
   top: 50%;
+  transform: translateY(-50%);
   display: inline-block;
-  background-image:url("../../icons/slider-arrow-to.svg");
+  background-image: url("../../icons/slider-arrow-to.svg");
   background-size: 20px 20px;
   background-repeat: no-repeat;
   mask-image: url("../../icons/slider-arrow-to.svg");
   mask-size: 20px 20px;
   mask-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    right: 30px;
+  }
 }
 
 .hero__points {
@@ -168,9 +181,11 @@
     background-color: $color-base-white;
     cursor: pointer;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       background-color: $color-alt-primary-opacity;
     }
+
     &:active {
       background-color: $color-base-primary;
     }
@@ -197,14 +212,14 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-}
-}
-
-.activeSlide {
-  display:flex;
+  }
 }
 
-.activeImage {
+.activeslide {
+  display: flex;
+}
+
+.activeimage {
   @media (min-width: $desktop-width) {
     background-color: $color-base-primary;
   }
@@ -301,7 +316,7 @@
 
   @media (min-width: $desktop-width) {
     text-align: left;
-    margin: 0 0 40px 0;
+    margin: 0 0 40px;
   }
 }
 

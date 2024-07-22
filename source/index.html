@@ -102,7 +102,7 @@
         <p class="visually-hidden">
           Наши новые предложения!
         </p>
-        <div class="hero__offers-slider" id="slider">
+        <div class="hero__offers-slider slider-pagination" id="slider">
           <div class="hero__offers-list">
             <div class="hero__offers-item">
               <div class="hero__box-image">
@@ -156,15 +156,20 @@
               <div class="hero__box-image">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)"
-                    srcset="/images/slider-desktop-lavender-latte@1x.webp 1x, /images/slider-desktop-lavender-latte@2x.webp 2x">
+                    srcset="/images/slider-desktop-lavender-latte@1x.webp 1x, /images/slider-desktop-lavender-latte@2x.webp 2x"
+                    width="600" height="600">
                   <source type="image/webp" media="(min-width: 768px)"
-                    srcset="/images/slider-tablet-lavender-latte@1x.webp 1x, /images/slider-tablet-lavender-latte@2x.webp 2x">
+                    srcset="/images/slider-tablet-lavender-latte@1x.webp 1x, /images/slider-tablet-lavender-latte@2x.webp 2x"
+                    width="476" height="476">
                   <source type="image/webp"
-                    srcset="/images/slider-mobile-lavender-latte@1x.webp 1x, /images/slider-mobile-lavender-latte@2x.webp 2x">
-                  <source media="(min-width: 1440px)"
-                    srcset="/images/slider-desktop-lavender-latte@1x.png 1x, /images/slider-desktop-lavender-latte@2x.png 2x">
-                  <source media="(min-width: 768px)"
-                    srcset="/images/slider-tablet-lavender-latte@1x.png 1x, /images/slider-tablet-lavender-latte@2x.png 2x">
+                    srcset="/images/slider-mobile-lavender-latte@1x.webp 1x, /images/slider-mobile-lavender-latte@2x.webp 2x"
+                    width="280" height="280">
+                  <source type="image/png" media="(min-width: 1440px)"
+                    srcset="/images/slider-desktop-lavender-latte@1x.png 1x, /images/slider-desktop-lavender-latte@2x.png 2x"
+                    width="600" height="600">
+                  <source type="image/png" media="(min-width: 768px)"
+                    srcset="/images/slider-tablet-lavender-latte@1x.png 1x, /images/slider-tablet-lavender-latte@2x.png 2x"
+                    width="476" height="476">
                   <img class="hero__image" src="/images/slider-mobile-lavender-latte@1x.png"
                     srcset="/images/slider-mobile-lavender-latte@2x.png 2x" width="280" height="280"
                     alt="Изображение нового продукта Лавандовый Латте.">
@@ -197,15 +202,20 @@
               <div class="hero__box-image">
                 <picture>
                   <source type="image/webp" media="(min-width: 1440px)"
-                    srcset="/images/slider-desktop-triple-espresso@1x.webp 1x, /images/slider-desktop-triple-espresso@2x.webp 2x">
+                    srcset="/images/slider-desktop-triple-espresso@1x.webp 1x, /images/slider-desktop-triple-espresso@2x.webp 2x"
+                    width="600" height="600">
                   <source type="image/webp" media="(min-width: 768px)"
-                    srcset="/images/slider-tablet-triple-espresso@1x.webp 1x, /images/slider-tablet-triple-espresso@2x.webp 2x">
+                    srcset="/images/slider-tablet-triple-espresso@1x.webp 1x, /images/slider-tablet-triple-espresso@2x.webp 2x"
+                    width="476" height="476">
                   <source type="image/webp"
-                    srcset="/images/slider-mobile-triple-espresso@1x.webp 1x, /images/slider-mobile-triple-espresso@2x.webp 2x">
-                  <source media="(min-width: 1440px)"
-                    srcset="/images/slider-desktop-triple-espresso@1x.png 1x, /images/slider-desktop-triple-espresso@2x.png 2x">
-                  <source media="(min-width: 768px)"
-                    srcset="/images/slider-tablet-triple-espresso@1x.png 1x, /images/slider-tablet-triple-espresso@2x.png 2x">
+                    srcset="/images/slider-mobile-triple-espresso@1x.webp 1x, /images/slider-mobile-triple-espresso@2x.webp 2x"
+                    width="280" height="280">
+                  <source type="image/png" media="(min-width: 1440px)"
+                    srcset="/images/slider-desktop-triple-espresso@1x.png 1x, /images/slider-desktop-triple-espresso@2x.png 2x"
+                    width="600" height="600">
+                  <source type="image/png" media="(min-width: 768px)"
+                    srcset="/images/slider-tablet-triple-espresso@1x.png 1x, /images/slider-tablet-triple-espresso@2x.png 2x"
+                    width="476" height="476">
                   <img class="hero__image" src="/images/slider-mobile-triple-espresso@1x.png"
                     srcset="/images/slider-mobile-triple-espresso@2x.png 2x" width="280" height="280"
                     alt="Изображение нового продукта Тройной Эспрессо.">
@@ -242,12 +252,12 @@
             <span class="hero__point"></span>
           </div>
 
-          <button class="hero__button-preview" id="prevBtn">
+          <div class="hero__button-preview slider-button-prev" id="prevbtn">
             <div class="hero__btn-preview"></div>
-          </button>
-          <button class="hero__button-next" id="nextBtn">
+          </div>
+          <div class="hero__button-next slider-button-next" id="nextbtn">
             <div class="hero__btn-next"></div>
-          </button>
+          </div>
         </div>
 
       </div>

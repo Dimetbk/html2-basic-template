@@ -46,17 +46,19 @@
   mask-size: 10px;
   mask-repeat: no-repeat;
   mask-position: center;
-  mask-size: 10px;
 }
 
 .pagination__symbol--forward {
   width: 10px;
   height: 10px;
-  background-image: url('../../icons/icon-pagin-forward.svg');
+  background-image: url("../../icons/icon-pagin-forward.svg");
   background-size: 10px;
   background-repeat: no-repeat;
   background-position: center;
-
+  mask-image: url("../../icons/icon-pagin-forward.svg");
+  mask-size: 10px;
+  mask-repeat: no-repeat;
+  mask-position: center;
 }
 
 .pagination a.active {
@@ -64,7 +66,6 @@
   font-weight: 600;
   background-color: $color-bg-lightest-grey;
 }
-
 
 .pagination a.disabled {
   background-color: $color-alt-light-grey;
@@ -74,11 +75,17 @@
 .pagination a:hover:not(.active) {
   background-color: $color-alt-primary-lighter;
   color: $color-base-white;
+
+  .pagination__symbol {
+    background: $color-base-white;
+  }
+
+  .pagination__word {
+    color: $color-base-white;
+  }
 }
 
 .pagination a:active:not(.active) {
   background-color: $color-alt-primary-darker;
   color: $color-base-white;
 }
-
-
