@@ -282,7 +282,6 @@
 }
 
 .site-list__item {
-  display: flex;
   padding: 20px;
   text-align: center;
   text-transform: uppercase;
@@ -301,7 +300,6 @@
   @media (min-width: $tablet-width) {
     padding: 32px 20px;
     border: none;
-    align-self: stretch;
   }
 }
 
