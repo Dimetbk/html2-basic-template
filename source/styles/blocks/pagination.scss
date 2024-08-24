@@ -37,10 +37,6 @@
 .pagination__symbol--back {
   width: 10px;
   height: 10px;
-  background-image: url("../../icons/icon-pagin-back.svg");
-  background-size: 10px;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: $color-base-primary;
   mask-image: url("../../icons/icon-pagin-back.svg");
   mask-size: 10px;
@@ -51,10 +47,6 @@
 .pagination__symbol--forward {
   width: 10px;
   height: 10px;
-  background-image: url("../../icons/icon-pagin-forward.svg");
-  background-size: 10px;
-  background-repeat: no-repeat;
-  background-position: center;
   mask-image: url("../../icons/icon-pagin-forward.svg");
   mask-size: 10px;
   mask-repeat: no-repeat;
