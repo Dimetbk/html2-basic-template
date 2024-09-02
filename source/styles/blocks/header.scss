@@ -68,10 +68,11 @@
   }
 }
 
-.header__icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header__item-icon {
+  display:block;
+  position: relative;
+  width: 60px;
+  height: 60px;
   cursor: pointer;
   border: none;
   background: $color-base-white;
@@ -80,43 +81,35 @@
     background: $color-base-secondary;
   }
 
-  @media (min-width: $desktop-width) {
-    &:hover .header__text {
-      color: $color-base-primary;
-    }
+  @media (min-width: $tablet-width) {
+    height: 80px;
   }
-}
-
-.header__icon-authorization {
-  display: block;
-  width: 60px;
-  height: 60px;
-  cursor: pointer;
-  border: none;
-  mask-image: url("../../icons/icon-user.svg");
-  mask-position: center;
-  mask-repeat: no-repeat;
-  mask-size: 16px;
-  background: $color-base-black;
 
   @media (min-width: $desktop-width) {
-    width: 16px;
-    height: 16px;
-    padding: 32px 8px 32px 20px;
+    min-width: 112px;
 
     &:hover {
-      background: $color-base-primary;
+      .icon__btn {
+        background: $color-base-primary;
+      }
+      .icon__btn-text {
+        color: $color-base-primary;
+      }
     }
   }
 }
 
-.header__icon-buy {
-  display: block;
+.header__item-icon--width {
+  @media (min-width: $desktop-width) {
+    min-width: 129px;
+  }
+}
+
+.icon__btn {
   width: 60px;
   height: 60px;
   cursor: pointer;
   border: none;
-  mask-image: url("../../icons/icon-bag.svg");
   mask-position: center;
   mask-repeat: no-repeat;
   mask-size: 16px;
@@ -127,33 +120,34 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 16px;
-    height: 16px;
-    padding: 32px 8px 32px 20px;
-
-    &:hover {
-      background: $color-base-primary;
-    }
+    display: block;
+    mask-position: 20px;
   }
 }
 
-.header__text {
+.icon__btn--authorization {
+  mask-image: url("../../icons/icon-user.svg");
+}
+
+.icon__btn--buy {
+  mask-image: url("../../icons/icon-bag.svg");
+}
+
+.icon__btn-text {
   display: none;
-  cursor: pointer;
   font-size: 12px;
   line-height: 1.33;
   text-transform: uppercase;
   color: $color-base-black;
+  border: none;
 
   @media (min-width: $desktop-width) {
     display: block;
+    position: absolute;
+    top: 32px;
+    left: 44px;
+    width: 48px;
     letter-spacing: 0.1em;
-    padding: 32px 20px 32px 0;
-
-    &:hover
-    .header__icon-buy {
-      background: $color-base-primary;
-    }
   }
 }
 
@@ -292,6 +286,13 @@
   letter-spacing: 0.02em;
   color: $color-base-black;
   border-top: 1px solid $color-base-secondary;
+  cursor: pointer;
+
+  &:hover {
+    .site-list__make {
+      color: $color-base-primary;
+    }
+  }
 
   &:active {
     background-color: $color-base-secondary;
@@ -303,7 +304,7 @@
   }
 }
 
-.site-list__item a {
+.site-list__make {
   color: $color-base-black;
 
   &:hover {
