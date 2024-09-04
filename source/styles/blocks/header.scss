@@ -26,10 +26,6 @@
   @media (min-width: $tablet-width) {
     padding: 22px 0;
   }
-
-  @media (min-width: $desktop-width) {
-    padding: 22px 0;
-  }
 }
 
 .header__logo-text {
@@ -69,7 +65,7 @@
 }
 
 .header__item-icon {
-  display:block;
+  display: block;
   position: relative;
   width: 60px;
   height: 60px;
@@ -89,10 +85,11 @@
     min-width: 112px;
 
     &:hover {
-      .icon__btn {
+      .header__item-picture {
         background: $color-base-primary;
       }
-      .icon__btn-text {
+
+      .header__item-text {
         color: $color-base-primary;
       }
     }
@@ -105,7 +102,7 @@
   }
 }
 
-.icon__btn {
+.header__item-picture {
   width: 60px;
   height: 60px;
   cursor: pointer;
@@ -125,15 +122,15 @@
   }
 }
 
-.icon__btn--authorization {
+.header__item-picture--authorization {
   mask-image: url("../../icons/icon-user.svg");
 }
 
-.icon__btn--buy {
+.header__item-picture--buy {
   mask-image: url("../../icons/icon-bag.svg");
 }
 
-.icon__btn-text {
+.header__item-text {
   display: none;
   font-size: 12px;
   line-height: 1.33;
@@ -145,9 +142,9 @@
     display: block;
     position: absolute;
     top: 32px;
-    left: 44px;
+    left: 45px;
     width: 48px;
-    letter-spacing: 0.1em;
+    letter-spacing: 0;
   }
 }
 

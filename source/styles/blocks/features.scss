@@ -36,7 +36,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 0 4px;
+    padding: 100px 0 5px;
   }
 }
 
@@ -112,7 +112,7 @@
     width: 317px;
     background-size: 52px;
     background-position: top;
-    background-position-y: -2px;
+    background-position-y: 0;
     background-repeat: no-repeat;
     text-align: center;
     padding: 75px 0 0;
