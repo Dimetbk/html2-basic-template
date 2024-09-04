@@ -188,10 +188,18 @@
 }
 
 .filter__radio {
-  margin-bottom: 11px;
+  margin-bottom: 17px;
   padding: 1px;
   font-size: 16px;
   line-height: 1.5;
+  height: 24px;
+}
+
+.filter__radio:last-child {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+    padding-bottom: 0;
+  }
 }
 
 .filter__checkbox {
@@ -226,7 +234,7 @@
   @media (min-width: $desktop-width) {
     justify-content: space-between;
     margin: 0;
-    padding-top: 32px;
+    padding-top: 30px;
     width: 318px;
     gap: 20px;
   }
