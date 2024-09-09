@@ -47,6 +47,10 @@
 
 .checkbox:hover + label::before {
   background-color: $color-alt-primary-opacity;
+  outline: 1px solid $color-base-primary;
+}
+.checkbox:focus + label::before {
+  background-color: $color-alt-primary-opacity;
   border: 1px solid $color-base-primary;
 }
 

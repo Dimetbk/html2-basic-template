@@ -180,6 +180,15 @@
 
 .shop-list__link p {
   padding: 8px 0;
+
+  &:hover,
+  &:focus {
+    color: $color-alt-primary-lighter;
+  }
+
+  &:active {
+    color: $color-alt-primary-darker;
+  }
 }
 
 .footer__media-wrapper {
@@ -222,6 +231,15 @@
 
 .media-list__link p {
   padding: 8px 0;
+
+  &:hover,
+  &:focus {
+    color: $color-alt-primary-lighter;
+  }
+
+  &:active {
+    color: $color-alt-primary-darker;
+  }
 }
 
 .footer__contacts-wrapper {

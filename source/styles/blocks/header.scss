@@ -84,7 +84,8 @@
   @media (min-width: $desktop-width) {
     min-width: 112px;
 
-    &:hover {
+    &:hover,
+    &:focus {
       .header__item-picture {
         background: $color-base-primary;
       }
@@ -285,7 +286,8 @@
   border-top: 1px solid $color-base-secondary;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     .site-list__make {
       color: $color-base-primary;
     }
@@ -303,10 +305,6 @@
 
 .site-list__make {
   color: $color-base-black;
-
-  &:hover {
-    color: $color-base-primary;
-  }
 }
 
 .site-list__item:last-child {
