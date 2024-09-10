@@ -73,6 +73,11 @@
   border: none;
   background: $color-base-white;
 
+  &:focus-within {
+    outline: 2px solid $color-alt-primary-darker;
+    border-radius: 5%;
+  }
+
   &:active {
     background: $color-base-secondary;
   }
@@ -291,6 +296,11 @@
     }
   }
 
+  &:focus-within {
+    outline: 2px solid $color-alt-primary-darker;
+    border-radius: 5%;
+  }
+
   &:active {
     background-color: $color-base-secondary;
   }
@@ -306,6 +316,11 @@
 
   &:hover {
     color: $color-base-primary;
+  }
+
+  &:focus-visible,
+  &:focus {
+    outline: none;
   }
 }
 
