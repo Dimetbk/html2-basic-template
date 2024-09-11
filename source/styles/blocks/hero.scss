@@ -43,7 +43,7 @@
 
 .hero__button-preview {
   position: absolute;
-  display: inline-block;
+  display: block;
   left: 0;
   top: 0;
   border: none;
@@ -64,6 +64,7 @@
   &:hover,
   &:focus {
     background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+    outline: none;
   }
 
   &:active {
@@ -86,13 +87,11 @@
   height: 20px;
   top: 50%;
   transform: translateY(-50%);
-  display: inline-block;
-  background-image: url("../../icons/slider-arrow-back.svg");
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
+  display: block;
   mask-image: url("../../icons/slider-arrow-back.svg");
   mask-size: 20px 20px;
   mask-repeat: no-repeat;
+  background: $color-base-primary;
 
   @media (min-width: $tablet-width) {
     left: 30px;
@@ -101,7 +100,7 @@
 
 .hero__button-next {
   position: absolute;
-  display: inline-block;
+  display: block;
   right: 0;
   top: 0;
   border: none;
@@ -122,6 +121,7 @@
   &:hover,
   &:focus {
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+    outline: none;
   }
 
   &:active {
@@ -146,12 +146,10 @@
   top: 50%;
   transform: translateY(-50%);
   display: inline-block;
-  background-image: url("../../icons/slider-arrow-to.svg");
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
   mask-image: url("../../icons/slider-arrow-to.svg");
   mask-size: 20px 20px;
   mask-repeat: no-repeat;
+  background: $color-base-primary;
 
   @media (min-width: $tablet-width) {
     right: 30px;
@@ -159,6 +157,8 @@
 }
 
 .hero__points {
+  display: none;
+
   @media (min-width: $desktop-width) {
     width: 202px;
     height: 24px;
@@ -180,10 +180,12 @@
     height: 4px;
     background-color: $color-base-white;
     cursor: pointer;
+    border: none;
 
     &:hover,
     &:focus {
       background-color: $color-alt-primary-opacity;
+      outline: none;
     }
 
     &:active {

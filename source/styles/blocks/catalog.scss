@@ -146,20 +146,25 @@
   color: $color-base-primary;
   border: none;
 
+  &:hover,
+  &:focus {
+    background-color: $color-base-secondary;
+    border: none;
+    outline: none;
+  }
+
+  &:active {
+    background-image: url("../../icons/arrow-up.svg");
+    border: none;
+    background-color: transparent;
+    outline: none;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 5px 30px 4px 10px;
     margin: 0;
     background-position-x: 145px;
   }
-}
-
-.catalog__variety:hover {
-  background-color: $color-base-secondary;
-}
-
-.catalog__variety:focus {
-  background-image: url("../../icons/arrow-up.svg");
-  border: none;
 }
 
 .catalog__list {

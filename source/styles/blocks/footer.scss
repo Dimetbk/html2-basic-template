@@ -1,5 +1,5 @@
 .footer {
-  background-color: $color-base-white;
+  background: $color-base-white;
 }
 
 .footer__container {
@@ -88,12 +88,17 @@
   gap: 20px;
 }
 
-.sotial-list__item:hover {
-  background-color: $color-base-secondary;
-}
+.sotial-list__item {
+  &:hover,
+  &:focus,
+  &:focus-within {
+    background: $color-base-secondary;
+    outline: none;
+  }
 
-.sotial-list__item:active {
-  background-color: $color-alt-primary-opacity;
+  &:active {
+    background: $color-alt-primary-opacity;
+  }
 }
 
 .sotial-list__link {
@@ -161,7 +166,7 @@
   padding: 0;
 }
 
-.footer__shop-list p {
+.footer__shop-list {
   font-size: 12px;
   font-weight: 500;
   line-height: 1.33;
@@ -170,16 +175,22 @@
 }
 
 .shop-list__item {
-  padding: 0;
+  padding: 8px 0;
   margin-bottom: 5px;
 }
 
 .shop-list__link {
-  padding: 0;
-}
+  color: $color-base-black;
 
-.shop-list__link p {
-  padding: 8px 0;
+  &:hover,
+  &:focus {
+    color: $color-alt-primary-lighter;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-alt-primary-darker;
+  }
 }
 
 .footer__media-wrapper {
@@ -203,7 +214,7 @@
   padding: 0;
 }
 
-.footer__media-list p {
+.footer__media-list {
   font-size: 12px;
   font-weight: 500;
   line-height: 1.33;
@@ -212,16 +223,22 @@
 }
 
 .media-list__item {
-  padding: 0;
+  padding: 8px 0;
   margin-bottom: 5px;
 }
 
 .media-list__link {
-  padding: 0;
-}
+  color: $color-base-black;
 
-.media-list__link p {
-  padding: 8px 0;
+  &:hover,
+  &:focus {
+    color: $color-alt-primary-lighter;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-alt-primary-darker;
+  }
 }
 
 .footer__contacts-wrapper {
@@ -254,6 +271,7 @@
 .contacts-list__item {
   padding: 0 0 0 19px;
   margin-bottom: 16px;
+  color: $color-base-black;
 }
 
 .contacts-list__item--map {
@@ -275,6 +293,17 @@
 
 .contacts-list__link {
   color: $color-base-black;
+  width: 100%;
+
+  &:hover,
+  &:focus {
+    color: $color-alt-primary-lighter;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-alt-primary-darker;
+  }
 }
 
 .contacts-list__item--phone {
@@ -304,7 +333,6 @@
 }
 
 .footer__devop-site {
-
   display: flex;
   justify-content: center;
 }
@@ -329,8 +357,10 @@
   background: $color-base-grey;
   border: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background: $color-base-primary;
+    outline: none;
   }
 
   &:active {

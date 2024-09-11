@@ -1,5 +1,5 @@
 .header {
-  background-color: $color-base-white;
+  background: $color-base-white;
 }
 
 .header__container {
@@ -74,8 +74,7 @@
   background: $color-base-white;
 
   &:focus-within {
-    outline: 2px solid $color-alt-primary-darker;
-    border-radius: 5%;
+    outline: none;
   }
 
   &:active {
@@ -89,7 +88,9 @@
   @media (min-width: $desktop-width) {
     min-width: 112px;
 
-    &:hover {
+    &:hover,
+    &:focus,
+    &:focus-within {
       .header__item-picture {
         background: $color-base-primary;
       }
@@ -178,6 +179,10 @@
   background-color: $color-base-white;
   cursor: pointer;
   border: none;
+
+  &:focus-within {
+    outline: none;
+  }
 
   &:active {
     background-color: $color-base-secondary;
@@ -290,15 +295,14 @@
   border-top: 1px solid $color-base-secondary;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:focus-within {
+    outline: none;
+
     .site-list__make {
       color: $color-base-primary;
     }
-  }
-
-  &:focus-within {
-    outline: 2px solid $color-alt-primary-darker;
-    border-radius: 5%;
   }
 
   &:active {
